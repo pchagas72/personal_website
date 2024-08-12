@@ -1,0 +1,35 @@
+*{
+    text-decoration: none;
+    color: rgb(205, 214, 244);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: rgb(205, 214, 244);
+    background-color: #1e1e28;
+
+}
+
+.App_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 50%;
+    min-width: 500px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: fit-content;
+    background: rgba(30, 30, 46, 0.9);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 25px;
+}
+
+.blog_button{
+    font-size: 50px;
+    text-decoration: underline;
+}

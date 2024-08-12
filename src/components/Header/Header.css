@@ -1,0 +1,51 @@
+h1{
+    text-align: center;
+    font-size: 60px;
+    padding:15px;
+}
+
+.Header_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: fit-content;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 25px;
+}
+
+.Header_div img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+    h1{
+        font-size: 40px;
+    }
+    .Header_div {
+        font-size: 14px;
+    }
+    .Header_div img{
+        height: 150px;
+    }
+}
+
+
+@media (min-width: 1000px) {
+    h1{
+        font-size: 75px;
+    }
+    .Header_div img{
+        height: 300px;
+    }
+}
+
