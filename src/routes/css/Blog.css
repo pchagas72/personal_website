@@ -34,3 +34,16 @@ body {
     display: flex;
     flex-direction: row-reverse;
 }
+
+@media (max-width: 700px) {
+    .recent_post_h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .older_posts_ul {
+        font-size: 18px;
+    }
+}
+

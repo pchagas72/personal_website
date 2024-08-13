@@ -28,8 +28,14 @@
   }
     
 .intro_text {
-    width: 100%;
+    width: 90%;
 }
+}
+
+@media (max-width: 450px) {
+.intro_text img{
+        width: 150px;
+    }
 }
 
 

@@ -33,3 +33,10 @@ body {
     font-size: 50px;
     text-decoration: underline;
 }
+
+@media (max-width: 700px) {
+    .blog_button {
+        font-size: 30px;
+    }
+}
+
