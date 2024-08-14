@@ -1,7 +1,7 @@
 import "./Header.css"
 import mandelbrot from "../../assets/mandelbrot.png"
-import old_man from "../../assets/old_man.png"
-import bear from "../../assets/bear.png"
+import mandelbrot2 from "../../assets/old_man.png"
+import mandelbrot3 from "../../assets/bear.png"
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -13,7 +13,7 @@ function changeCurrentPic(index: number, picturesLen: number){
 }
 
 function Header(){
-    const pictures = [mandelbrot, old_man, bear]
+    const pictures = [mandelbrot,mandelbrot2, mandelbrot3]
     const [current_pic, setCurrent_pic] = useState(0)
     return (
     <div className="Header_div">
