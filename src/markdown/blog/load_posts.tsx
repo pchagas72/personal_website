@@ -9,5 +9,6 @@ for (const key in postsJson) {
         posts_array.push([value[0], value[1], value[2]])
     }
 }
+console.log(posts_array)
 
 export default posts_array.reverse()
