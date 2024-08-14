@@ -1,3 +1,5 @@
-# Meu website pessoal, que usa muito (muito) markdown
+# My personal website that renders markdown because I'm lazy
 
-Um site que fala sobre mim, sem ser um portifólio, só um local pra eu fazer o que quiser.
+My personal website, this is NOT a portifolio.
+
+It's just a place on the internet that I do wathever I want.
