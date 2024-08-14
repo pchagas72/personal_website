@@ -1,10 +1,13 @@
-import post1 from './posts/post1.md'
-import post2 from './posts/post2.md'
+import postsJson from './posts.json'
 
+let posts_array: Array<any> = []
 
-const posts_array = [
-    [post1, "Experiência com typescript, e amanhã embarque digital", "06 Aug 2024"],
-    [post2, "Novo website, ótimas atualizações", "12 Aug 2024"],
-]
+for (const key in postsJson) {
+    if (postsJson.hasOwnProperty(key)) {
+        // @ts-ignore
+        let value = postsJson[key];
+        posts_array.push([value[0], value[1], value[2]])
+    }
+}
 
 export default posts_array.reverse()
