@@ -6,6 +6,5 @@ It's just a place on the internet that I do wathever I want.
 
 ## TODO
 
-- Add personal library
 - Add playlists page
 - Add projects dedicated page
