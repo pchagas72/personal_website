@@ -18,7 +18,8 @@ function App() {
     <>
             <CM content={introMd}/>
             <CM content={projectsMd}/>
-            <Link to={"/blog"}><h1 className='blog_button'>My Blog</h1></Link>
+            <Link to={"/blog"}><h1 className='link_button'>My Blog</h1></Link>
+            <Link to={"/bookshelf"}><h1 className='link_button'>My Bookshelf</h1></Link>
             <CM content={footerMd}/>
    </>
   )
