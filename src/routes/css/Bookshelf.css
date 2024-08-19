@@ -17,19 +17,15 @@ body {
 }
 
 .book_section img{
-    height: 300px; 
+    width: 150px;
 }
 
 @media (max-width: 700px) {
-    .recent_post_h1 {
+    .bookshelf_h1 {
         font-size: 30px;
     }
-}
-
-@media (max-width: 700px) {
-    .older_posts_ul {
-        font-size: 18px;
-        margin-left: 0px;
+    .book_section img {
+        width: 150px;
     }
 }
 
