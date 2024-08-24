@@ -18,6 +18,8 @@ func updateBooks(booksPath string, booksJsonPath string){
 }
 
 func main(){
+    fmt.Println("Hey, what do you want to do?")
     updatePosts("markdown/blog/posts/","markdown/blog/posts.json")
     updateBooks("markdown/bookshelf/books/", "markdown/bookshelf/books.json")
+
 }
