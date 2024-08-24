@@ -9,3 +9,4 @@ It's just a place on the internet that I do wathever I want.
 - Finish repertoir page and script !!!
 - Add playlists page
 - Add projects dedicated page
+- Add books to the bookshelf
