@@ -1,8 +1,9 @@
 package helper
 
 import (
-    "fmt"
-    "os"
+	"bufio"
+	"fmt"
+	"os"
 )
 
 func Check(err error) {
@@ -31,5 +32,13 @@ func ReadLines(content string) []string {
         temp_str += string(char)
     }
     return lines_list
+}
+
+func GetInput() string{
+    fmt.Print(">>> ")
+    in := bufio.NewReader(os.Stdin)
+    line, err := in.ReadString('\n')
+    Check(err)
+    return line
 }
 

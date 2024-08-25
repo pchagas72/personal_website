@@ -21,37 +21,32 @@ func AddSong() Song{
     var description string;
     var sheet_music string;
     fmt.Println("Type the song title:")
-    _, err_title := fmt.Scanf(">> ",&title)
-    helper.Check(err_title)
+    title = helper.GetInput()
     fmt.Println("Type the author:")
-    fmt.Println("Type the author:")
-    _, err_author := fmt.Scanf(">> ",&author)
-    helper.Check(err_author)
+    author = helper.GetInput()
     fmt.Println("Type the song description:")
-    _, err_description := fmt.Scanf(">> ",&description)
-    helper.Check(err_description)
+    description = helper.GetInput()
     fmt.Println("Paste a link for the sheet music:")
-    _, err_sheet := fmt.Scanf(">> ",&sheet_music)
-    helper.Check(err_sheet)
+    sheet_music = helper.GetInput()
     return Song{title, author, description, sheet_music}
 }
 
-func getSongs(filepath string) []string{
+func getSongs(filepath string) [][]string{
     contentJson, err := os.ReadFile(filepath)
     helper.Check(err)
-    var content []string
+    var content [][]string
     json.Unmarshal(contentJson, &content)
     return content
 
 }
 
-func WriteSongs(songsJsonPath string, filesPath string){
+func WriteSongs(songsJsonPath string){
     var song Song = AddSong()
     var songToWrite []string = []string{
         song.title, song.author, song.description, song.sheet_music,
     }
-    var oldSongs = getSongs(filesPath)
-    newsongs := append(oldSongs, songToWrite...)
+    var oldSongs = getSongs(songsJsonPath)
+    newsongs := append(oldSongs, songToWrite)
     b, err := json.Marshal(newsongs)
     helper.Check(err)
     err = os.WriteFile(songsJsonPath, b, os.ModePerm)
