@@ -72,5 +72,15 @@ body {
     .piece_section{
         width: 95%;
     }
+    .pieces_list{
+        width: 95%;
+        font-size: 15px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border: 2px dotted rgb(205, 214, 244);
+        padding-top: 15px;
+        list-style:circle;
+    }
 }
 

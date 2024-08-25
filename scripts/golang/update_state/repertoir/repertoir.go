@@ -37,7 +37,6 @@ func getSongs(filepath string) [][]string{
     var content [][]string
     json.Unmarshal(contentJson, &content)
     return content
-
 }
 
 func WriteSongs(songsJsonPath string){
@@ -51,5 +50,4 @@ func WriteSongs(songsJsonPath string){
     helper.Check(err)
     err = os.WriteFile(songsJsonPath, b, os.ModePerm)
     helper.Check(err)
-    
 }
