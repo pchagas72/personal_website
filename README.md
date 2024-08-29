@@ -6,7 +6,5 @@ It's just a place on the internet that I do wathever I want.
 
 ## TODO
 
-- Add playlists page
 - Add projects dedicated page
-- Add books to the bookshelf
 - Add edit functionality to "update state" script
