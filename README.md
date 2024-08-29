@@ -8,4 +8,4 @@ It's just a place on the internet that I do wathever I want.
 
 - Add projects dedicated page
 - Add edit functionality to "update state" script
-- Add files page, with firebase authentication
+- Add files page, with firebase authentication, maybe with notes too (create text file)
