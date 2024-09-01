@@ -35,7 +35,8 @@ func getSongs(filepath string) [][]string{
     contentJson, err := os.ReadFile(filepath)
     helper.Check(err)
     var content [][]string
-    json.Unmarshal(contentJson, &content)
+    err = json.Unmarshal(contentJson, &content)
+    helper.Check(err)
     return content
 }
 
