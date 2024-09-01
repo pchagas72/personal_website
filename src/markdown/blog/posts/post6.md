@@ -23,10 +23,11 @@ Antes de demonstrar os cursos que eu recomendo, vale demonstrar alguns pensament
 
 - Certificados em línguas estrangeiras são as melhores opções 90% das vezes, tanto por qualidade, tanto para mostrar que você é capacitado para trabalhar em múltiplas linguagens.
 
-Estou compilando cursos muito bons para iniciar a busca por trabalhos, aqui estão alguns:
+Esses são os cursos e certificados que estou fazendo:
 
 - **[Google Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-data-analytics)**
 - **[Google Project Management: Professional Certificate](https://www.coursera.org/professional-certificates/google-project-management)**
 - **[Google IT Support Professional Certificate](https://www.coursera.org/professional-certificates/google-it-support)**
+- **[DeppLearning.ai Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)**
 
 Os certificados do Google são ideais para te ajudar a garantir o primeiro emprego. São objetivos, e bem chamativos.
