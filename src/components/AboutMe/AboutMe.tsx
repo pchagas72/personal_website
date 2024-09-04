@@ -1,22 +1,13 @@
 import './AboutMe.css'
 import picture from '../../assets/eu.jpeg'
-import { useState } from 'react'
+import SectionTitle from '../SectionTitle/SectionTitle'
 
 function AboutMe(){
-    const [binNumber, setBinNumber] = useState("001")
-    function changeBinNumber(number: string){
-        switch(number){
-            case "001": {setBinNumber("1"); break;};
-            case "1": {setBinNumber("001"); break;};
-        }
-    }
     return (
         <>
             <div className="aboutMeSection">
                 <div className='aboutMeSectionText'>
-                <h2><span className='title_numbering'
-                        onClick={() => changeBinNumber(binNumber)}>{binNumber}</span> - About Me</h2>
-
+                <SectionTitle SectionName="About Me" SectionNumber="001"/>
                 <p>My name is Pedro Chagas, but call me Chagas, I'm a fullstack
                         developer currently residing in Brazil. I love writing 
                     the cleanest and most efficient code! You can check this 

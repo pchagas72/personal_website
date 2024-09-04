@@ -8,11 +8,12 @@
     align-items: center;
     justify-content: space-evenly;
     border-top: 2px solid rgb(205, 214, 244);
+    margin-bottom: 100px;
 }
 
 .aboutMeSectionText{
     padding: 40px;
-        width: 50%;
+    width: 50%;
 }
 
 .aboutMePicture img{
@@ -32,7 +33,6 @@
     transition: 300ms;
     cursor: pointer;
 }
-
 @media (min-width: 992px) {
     .aboutMeSection {
         font-size: 17px;
