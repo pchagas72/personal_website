@@ -1,0 +1,72 @@
+.aboutMeSection{
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 2px solid rgb(205, 214, 244);
+}
+
+.aboutMeSectionText{
+    padding: 40px;
+        width: 50%;
+}
+
+.aboutMePicture img{
+    height: 300px; 
+    border-right: 5px outset rgb(205, 214, 244);
+    border-bottom: 5px outset rgb(205, 214, 244);
+    padding-right: 5px;
+    padding-bottom: 5px;
+    transition: 300ms;
+}
+
+.aboutMePicture img:hover{
+    border-right: 5px outset rgb(215, 174, 204);
+    border-bottom: 5px outset rgb(215, 174, 204);
+    padding-right: 10px;
+    padding-bottom: 10px;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+@media (min-width: 992px) {
+    .aboutMeSection {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 780px) {
+    .aboutMeSection {
+        font-size: 16px;
+    }
+    
+    .aboutMeSectionText{
+        padding: 0;
+    }
+
+    .aboutMeSection {
+        width: 90%;
+    }
+    .aboutMeSection{
+        flex-direction: column;
+    }
+    .aboutMePicture{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .aboutMeSectionText{
+        width: inherit;
+    }
+}
+
+@media (max-width: 450px) {
+    .aboutMePicture img{
+        height: 150px;
+    }
+}
+
+

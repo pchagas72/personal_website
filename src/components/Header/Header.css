@@ -26,7 +26,61 @@ h1{
     height: 300px;
     padding-bottom: 20px;
     cursor: pointer;
+    transform: scale(1);
+    transition: all 300ms;
 }
+
+.Header_div img:hover{
+    cursor: pointer;
+    transform: scale(1.07);
+    transition: all 500ms;
+}
+
+.mandelbrot_text{
+    font-size: 18px;
+        transition: ease-in-out 200ms;
+}
+
+.mandelbrot_text:hover{
+    font-size: 18px;
+}
+
+.h1_header {
+    color: rgb(205, 214, 244);
+    text-decoration: none;
+    background-image: linear-gradient(rgb(205,214,244), rgb(205,214,244));
+    background-size: 0% 0.09rem;
+    background-position-y: 100%;
+    background-position-x: 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s ease-in-out;
+}
+.h1_header:hover,
+.h1_header:focus,
+.h1_header:active {
+    background-size: 100% 0.09em;
+    background-position-x: 0%;
+}
+
+
+.mandelbrot_text {
+    cursor: pointer;
+    color: rgb(205, 214, 244);
+    text-decoration: none;
+    background-image: linear-gradient(rgb(205,214,244), rgb(205,214,244));
+    background-size: 0% 0.09rem;
+    background-position-y: 100%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s ease-in-out;
+}
+.mandelbrot_text:hover,
+.mandelbrot_text:focus,
+.mandelbrot_text:active {
+    background-size: 100% 0.09em;
+}
+
+
 
 @media (max-width: 700px) {
     h1{

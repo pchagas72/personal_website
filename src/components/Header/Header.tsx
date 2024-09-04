@@ -2,7 +2,6 @@ import "./Header.css"
 import mandelbrot from "../../assets/mandelbrot.png"
 import mandelbrot2 from "../../assets/old_man.png"
 import mandelbrot3 from "../../assets/bear.png"
-import cat from "../../assets/cat-blue-eye.png"
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -14,14 +13,24 @@ function changeCurrentPic(index: number, picturesLen: number){
 }
 
 function Header(){
-    const pictures = [mandelbrot,mandelbrot2, mandelbrot3, cat]
+    const pictures = [mandelbrot,mandelbrot2, mandelbrot3]
     const [current_pic, setCurrent_pic] = useState(0)
+    const [clicks, setClicks] = useState(0)
+    if (clicks < 3){
+        var mandelbrot_text = "";
+    } else{
+        var mandelbrot_text = "Curious about the images?";
+    }
     return (
     <div className="Header_div">
-        <Link to={"/"}><h1>Pedro Chagas</h1></Link>
-        <img onClick={() =>
-                setCurrent_pic(changeCurrentPic(current_pic, pictures.length))}
+        <Link to={"/"}><h1 className="h1_header">Pedro Chagas</h1></Link>
+        <img onClick={() => { 
+                setCurrent_pic(changeCurrentPic(current_pic, pictures.length));
+                setClicks(clicks+1);
+            }
+            }
                 src={pictures[current_pic]}/>
+        <p className="mandelbrot_text">{mandelbrot_text}</p>
     </div>
     );
 }
