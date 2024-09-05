@@ -33,8 +33,15 @@ body {
 .link_button{
     font-size: 40px;
     text-decoration: underline;
-    padding-bottom: 45px;
+    margin-bottom: 45px;
+    color: rgb(215, 174, 204);
 }
+
+.link_button:hover{
+    font-size: 45px;
+}
+
+
 
 @media (max-width: 700px) {
     .blog_button {
@@ -42,3 +49,33 @@ body {
     }
 }
 
+.insideLinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.link_button {
+    text-decoration: none;
+    font-size: 40px;
+    background-image: linear-gradient(rgb(205,214,244), rgb(205,214,244));
+    background-size: 0% 0.09rem;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s ease-in-out;
+    transition: 400ms;
+}
+.link_button:hover,
+.link_button:focus,
+.link_button:active {
+    background-size: 100% 0.09em;
+    color: rgb(215, 174, 204);
+    cursor: pointer;
+    background-position-x: 0%;
+}
+
+.insideLinks h1{
+    font-size: 40px;
+}

@@ -30,7 +30,7 @@ function Header(){
             }
             }
                 src={pictures[current_pic]}/>
-        <p className="mandelbrot_text">{mandelbrot_text}</p>
+        <p className="mandelbrot_text"><a href="https://pt.wikipedia.org/wiki/Conjunto_de_Mandelbrot#:~:text=Mandelbrot%2C%20um%20matem%C3%A1tico%20do%20IBM,em%20escalas%20cada%20vez%20menores.">{mandelbrot_text}</a></p>
     </div>
     );
 }
