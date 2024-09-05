@@ -6,6 +6,6 @@ It's just a place on the internet that I do wathever I want.
 
 ## TODO
 
-- Add files page, with firebase authentication, maybe with notes too (create text file)
-- Update whole site, just like the about me section
-- Add links to pretty links
+- Prettify the sub pages
+- Add more projects
+- Add other projects section, or link to github
