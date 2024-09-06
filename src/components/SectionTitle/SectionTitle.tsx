@@ -8,6 +8,8 @@ function SectionTitle(props: any){
             case "1": {setBinNumber("001"); break;};
             case "010": {setBinNumber("2"); break;};
             case "2": {setBinNumber("010"); break;};
+            case "011": {setBinNumber("3"); break;};
+            case "3": {setBinNumber("011"); break;};
         }
     }
 

@@ -58,7 +58,7 @@
 .Project:hover{
     transition: 300ms ease-in-out;
     border-left-width: 10px;
-    border-left-color: rgb(215, 174, 204);;
+    border-left-color: rgb(215, 174, 204);
 }
 
 @media (min-width: 992px) {

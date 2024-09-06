@@ -1,3 +1,5 @@
+import './ProjectSection.css'
+
 export default function ProjectSection(props: any) {
     return (
         <section className='Project'>
@@ -5,6 +7,7 @@ export default function ProjectSection(props: any) {
             <h2> {props.projectTitle} </h2>
             <p> {props.projectDesc} </p>
             <div>
+                <p>{props.tech}</p>
                 <a className='prettyLink' href={props.projectLink}>View it on github!</a>
             </div>
         </section>

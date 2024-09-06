@@ -8,10 +8,15 @@ function AboutMe(){
             <div className="aboutMeSection">
                 <div className='aboutMeSectionText'>
                 <SectionTitle SectionName="About Me" SectionNumber="001"/>
-                <p>My name is Pedro Chagas, but call me Chagas, I'm a fullstack
-                        developer currently residing in Brazil. I love writing 
-                    the cleanest and most efficient code! You can check this 
-                    on my <a className='prettyLink' href='https://github.com/pchagas72'>github</a> projects.</p>
+
+                <p> Hi, my name is Pedro Chagas and I am: </p>
+                    <ul>
+                        <li className='prettyLink'>Your dream developer</li>
+                        <li className='prettyLink'>Classical musician</li>
+                        <li className='prettyLink'>Computer science fanatic</li>
+                        <li className='prettyLink'>Linux lover</li>
+                    </ul>
+                    <p> I love writing the cleanest and most efficient code, check this on my <a className='prettyLink' href="https://github.com/pchagas72">github profile</a>. </p>
 
                 <h2>What am I working on?</h2>
                 <p>I'm a very engaged and proactive person, I don't stand to not be doing anything.
