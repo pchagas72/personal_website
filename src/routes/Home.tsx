@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 import AboutMe from '../components/AboutMe/AboutMe'
 import Projects from '../components/Projects/Projects'
-import PastExperiences from '../components/PastExperiences/PastExperience'
 
 function App() {
 

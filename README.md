@@ -6,6 +6,7 @@ It's just a place on the internet that I do wathever I want.
 
 ## TODO
 
+- Add tech I use in about me !!!
 - Prettify the sub pages
 - Add more projects
 - Finish past experiences section
