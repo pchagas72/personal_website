@@ -60,6 +60,7 @@ body {
 .link_button {
     text-decoration: none;
     font-size: 40px;
+    margin-top: 10px;
     background-image: linear-gradient(rgb(205,214,244), rgb(205,214,244));
     background-size: 0% 0.09rem;
     background-position-y: 100%;
@@ -72,9 +73,9 @@ body {
 .link_button:focus,
 .link_button:active {
     background-size: 100% 0.09em;
-    color: rgb(215, 174, 204);
     cursor: pointer;
     background-position-x: 0%;
+    color: rgb(215, 174, 204);
 }
 
 .insideLinks h1{

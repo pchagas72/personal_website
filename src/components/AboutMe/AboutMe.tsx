@@ -10,11 +10,11 @@ function AboutMe(){
                 <SectionTitle SectionName="About Me" SectionNumber="001"/>
 
                 <p> Hi, my name is Pedro Chagas and I am: </p>
-                    <ul>
-                        <li className='prettyLink'>Your dream developer</li>
-                        <li className='prettyLink'>Classical musician</li>
-                        <li className='prettyLink'>Computer science fanatic</li>
-                        <li className='prettyLink'>Linux lover</li>
+                    <ul className='iam'>
+                        <li><a className='prettyLink'>Your dream developer</a></li>
+                        <li><a className='prettyLink'>Classical musician</a></li>
+                        <li><a className='prettyLink'>Computer science fanatic</a></li>
+                        <li><a className='prettyLink'>Linux lover</a></li>
                     </ul>
                     <p> I love writing the cleanest and most efficient code, check this on my <a className='prettyLink' href="https://github.com/pchagas72">github profile</a>. </p>
 

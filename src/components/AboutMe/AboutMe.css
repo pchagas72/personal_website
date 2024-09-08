@@ -24,6 +24,10 @@
     transition: 300ms;
 }
 
+.iam{
+    list-style: none;
+}
+
 .aboutMePicture img:hover{
     border-right: 5px outset rgb(215, 174, 204);
     border-bottom: 5px outset rgb(215, 174, 204);
