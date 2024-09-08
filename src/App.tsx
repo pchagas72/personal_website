@@ -4,6 +4,7 @@ import Home from './routes/Home'
 import Blog from './routes/Blog'
 import Bookshelf from './routes/Bookshelf'
 import Repertoir from './routes/Repertoir'
+import Notebook from './routes/Notebook'
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
             <Route path="/blog" element={<Blog/>}/>
             <Route path="/bookshelf" element={<Bookshelf/>}/>
             <Route path="/repertoir" element={<Repertoir/>}/>
+            <Route path="/notebook" element={<Notebook/>}/>
         </Routes>
   )
 }

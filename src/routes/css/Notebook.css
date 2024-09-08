@@ -1,0 +1,51 @@
+.markdownEditor{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    textarea{
+        background: black;
+        border: none;
+        outline: none;
+        width: 40%;
+        height: 99.55%;
+        resize: none;
+        background-color: #16161f;
+        border-right: 2px dotted rgb(205, 214, 244);
+    }
+    
+    .outputSection{
+        width: 60%;
+        height: 98%;
+        padding: 10px;
+        overflow-y: auto;
+
+    }
+}
+
+.noteTakingApp{
+    width: 95%;
+    height: 90vh;
+    border: 2px rgb(205, 214, 244) solid;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 200px;
+    button {
+        margin-top: 20px;
+        background-color: #16161f;
+        border: 1px rgb(205, 214, 244) solid;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-left: 5px;
+    }
+    button:hover{
+        cursor: pointer;
+        border: 1px rgb(215, 174, 204) solid;
+    }
+}
+
+
