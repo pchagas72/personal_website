@@ -9,6 +9,7 @@ import firebase from 'firebase/compat/app';
 import 'firebase/firestore'
 import 'firebase/auth';
 import { collection, doc, getFirestore, onSnapshot, setDoc } from 'firebase/firestore';
+import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 
 const app = firebase.initializeApp({
   apiKey: "AIzaSyDuY4wlWQJtfV93_scQPetZxs3_BbBS5Jc",
@@ -21,6 +22,8 @@ const app = firebase.initializeApp({
 })
 
 const firestore = getFirestore(app)
+
+const auth = getAuth(app)
 
 function Notebook(){
 
@@ -60,6 +63,17 @@ Be aware that this is the first version of this tool!
 
     const [inputTitle, setInputTitle] = useState("")
 
+    //@ts-ignore
+    const [user, setUser] = useState('')
+
+    const handleGoogle = () => {
+        const provider = new GoogleAuthProvider();
+        signInWithPopup(auth,provider).then((data)=>
+            //@ts-ignore
+            setUser(data.user.email)
+        );
+    }
+
     return (
         <>
             <CS content={notebookMd}/>
@@ -81,7 +95,10 @@ Be aware that this is the first version of this tool!
                 <div className='sendToFirebaseDiv'>
                     <p> Note title: </p>
                     <textarea className='titleText' value={inputTitle} onChange={(e) => setInputTitle(e.target.value)}/>
-                    <button onClick={() => sendToFirebase(inputTitle, input)}>Save on database</button>
+                    { user == "pedrochagas.sh@gmail.com"?
+                        <button onClick={() => sendToFirebase(inputTitle, input)}>Save on database</button>
+                        : user? <p>Looks like you don't have permission to upload items to the database...</p>:<button onClick={handleGoogle}>Sign in to save on database</button>
+                    }
                 </div>
                 <h2 className='titleH2'> Old notes </h2>
                 <ul className='oldNotes'>
