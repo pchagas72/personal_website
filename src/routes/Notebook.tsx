@@ -5,25 +5,12 @@ import './css/Notebook.css'
 import Markdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import remarkGfm from 'remark-gfm';
-import firebase from 'firebase/compat/app';
 import 'firebase/firestore'
 import 'firebase/auth';
-import { collection, doc, getFirestore, onSnapshot, setDoc } from 'firebase/firestore';
-import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
-
-const app = firebase.initializeApp({
-  apiKey: "AIzaSyDuY4wlWQJtfV93_scQPetZxs3_BbBS5Jc",
-  authDomain: "pchagas-sh.firebaseapp.com",
-  projectId: "pchagas-sh",
-  storageBucket: "pchagas-sh.appspot.com",
-  messagingSenderId: "1083235124608",
-  appId: "1:1083235124608:web:44a505a1781880d9492d65",
-  measurementId: "G-Z5DNY9XK72"
-})
-
-const firestore = getFirestore(app)
-
-const auth = getAuth(app)
+import { collection, doc, onSnapshot, setDoc } from 'firebase/firestore';
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import { firestore } from '../firebase';
+import { auth } from '../firebase';
 
 function Notebook(){
 

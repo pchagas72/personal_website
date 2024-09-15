@@ -22,6 +22,7 @@ function App() {
                 <Link className='link_button' to={"/blog"}>My Blog</Link>
                 <Link className='link_button' to={"/bookshelf"}>My Bookshelf</Link>
                 <Link className='link_button' to={"/repertoir"}>My Repertoire</Link>
+                <Link className='link_button' to={"/notebook"}>My Notebook (new)</Link>
             </div>
             <CM content={footerMd} />
         </div>
