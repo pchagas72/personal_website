@@ -29,8 +29,8 @@ function AboutMe(){
                 <ul>
                     <li>Email: <a className='prettyLink'>pedrochagas.sm@gmail.com</a></li>
                     <li>Discord: <a className='prettyLink'>Pchagas</a></li>
-                    <li>Instagram: <a className='prettyLink'>@pchagas.s</a></li>
-                    <li>Linkedin: <a href='' className='prettyLink'>Pedro Chagas</a></li>
+                    <li> <a className='prettyLink'>@pchagas.s</a></li>
+                    <li>Linkedin: <a href='https://www.linkedin.com/in/pedro-chagas-44a4112aa' className='prettyLink'>Pedro Chagas</a></li>
                 </ul>
                 </div>
                 <div className='aboutMePicture'>
