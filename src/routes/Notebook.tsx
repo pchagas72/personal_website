@@ -8,7 +8,7 @@ import remarkGfm from 'remark-gfm';
 import 'firebase/firestore'
 import 'firebase/auth';
 import { collection, deleteDoc, doc, onSnapshot, setDoc } from 'firebase/firestore';
-import { GoogleAuthProvider, signInWithPopup, signInWithRedirect } from 'firebase/auth';
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { firestore } from '../firebase';
 import { auth } from '../firebase';
 
