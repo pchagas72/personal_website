@@ -7,15 +7,16 @@ import rehypeRaw from 'rehype-raw';
 import remarkGfm from 'remark-gfm';
 import 'firebase/firestore'
 import 'firebase/auth';
-import { collection, doc, onSnapshot, setDoc } from 'firebase/firestore';
-import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import { collection, deleteDoc, doc, onSnapshot, setDoc } from 'firebase/firestore';
+import { GoogleAuthProvider, signInWithPopup, signInWithRedirect } from 'firebase/auth';
 import { firestore } from '../firebase';
 import { auth } from '../firebase';
+
+
 
 function Notebook(){
 
     const [notes,setNotes] = useState([]);
-    console.log(notes)
     useEffect(
         () =>
             onSnapshot(collection(firestore, "notes"), (snapshot) => 
@@ -33,6 +34,20 @@ function Notebook(){
             Content: content
         })
     }
+
+    function deleteFromFirebase(name:string){
+            if (user){
+                if (user == 'pedrochagas.sh@gmail.com'){
+                    deleteDoc(doc(firestore, 'notes', name))
+                }
+                else{
+                    alert("Parece que você não tem permissão para deletar notas!")
+                }
+            } else{
+                alert("Faça login primeiro.")
+            }
+        }
+
 
     const [input, setInput] = useState(
         `# Type your markdown code
@@ -92,8 +107,16 @@ Be aware that this is the first version of this tool!
                     {
                         notes.map((note) =>
                             // @ts-ignore
-                            <li onClick={()=>{setInput(note.Content); setInputTitle(note.title)}}><a className='prettyLink'>{note.Name}</a></li>
+                            <li><a onClick={()=>{setInput(note.Content); setInputTitle(note.title)}} className='prettyLink'>{note.Name}</a>
+                                { user?
+                            <a className='prettyLink' onClick={
+                                    // @ts-ignore
+                                    () => deleteFromFirebase(note.Name)}
+                                    > - Delete</a>                                    
+                                : <a></a>}
+                            </li> 
                         )
+
                     }
                 </ul>
             </div>
