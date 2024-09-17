@@ -4,6 +4,6 @@
 
 Time of reading: _July 2024 - August 2024_
 
-Dune is a cool book, I'm tired and this is a test but dune is my favourite saga.
+The book dives into big themes like power, religion, and ecology, but it’s also packed with action, complex characters, and world-building. It can be a bit slow at times, but once you’re in, it’s an epic tale that sticks with you. If you’re into deep, thought-provoking sci-fi, Dune is definitely worth checking out.
 
 The two first books are the best.
