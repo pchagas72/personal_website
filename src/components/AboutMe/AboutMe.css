@@ -72,4 +72,30 @@
     }
 }
 
+.socials{
+    li{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    li:hover{
+        .icon{
+        font-size: 22.5px;
+        cursor: pointer;
+        transition: 200ms;
+        }
+    }
+    .icon{
+        font-size: 20px;
+        padding-right: 20px;
+        transition: 200ms;
+        color: rgb(205, 214, 244);
+    }
+    .icon:hover{
+        font-size: 22.5px;
+        cursor: pointer;
+        transition: 200ms;
+    }
+    list-style: none;
+}
 
