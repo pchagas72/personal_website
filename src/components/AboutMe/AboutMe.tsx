@@ -20,9 +20,9 @@ function AboutMe(){
                     <p> I love writing the cleanest and most efficient code, check this on my <a className='prettyLink' href="https://github.com/pchagas72">github profile</a>. </p>
 
                 <h2>What am I working on?</h2>
-                <p>I'm a very engaged and proactive person, I don't stand to not be doing anything.
-                    So, I'm a <a>Computer engineering</a> student at UFPE, and I'm also majoring <a>
-                        Internet Systems</a> at UNICAP with the program <a href='https://www.portodigital.org/noticias/embarque-digital-abre-250-vagas-para-turma-2024-2' className='prettyLink'>"Embarque Digital"</a></p>
+                <p>I'm one of those people that are always working on something.
+                    So, I'm a <a>Computer engineering</a> student at UFPE, and I'm also majoring in <a>
+                        Internet Systems</a> at UNICAP under the program <a href='https://www.portodigital.org/noticias/embarque-digital-abre-250-vagas-para-turma-2024-2' className='prettyLink'>"Embarque Digital"</a></p>
 
                 <p> On top of all that, I'm a proud <a href='https://personal-website-nine-murex.vercel.app/repertoir' className='prettyLink'>musician</a> at the Pernambuco Music Conservatoire </p>
 
