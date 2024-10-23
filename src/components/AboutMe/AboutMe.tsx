@@ -24,6 +24,8 @@ function AboutMe(){
                     So, I'm a <a>Computer engineering</a> student at UFPE, and I'm also majoring in <a>
                         Internet Systems</a> at UNICAP under the program <a href='https://www.portodigital.org/noticias/embarque-digital-abre-250-vagas-para-turma-2024-2' className='prettyLink'>"Embarque Digital"</a></p>
 
+                <p> I'm taking a break from one of my majors (UFPE), and looking for internships or jobs!</p>
+
                 <p> On top of all that, I'm a proud <a href='https://personal-website-nine-murex.vercel.app/repertoir' className='prettyLink'>musician</a> at the Pernambuco Music Conservatoire </p>
 
                 <h3> My contact: </h3>
