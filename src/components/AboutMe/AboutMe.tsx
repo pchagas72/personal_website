@@ -14,8 +14,9 @@ function AboutMe(){
                     <ul className='iam'>
                         <li><a className='prettyLink'>Your dream developer</a></li>
                         <li><a className='prettyLink'>Classical musician</a></li>
-                        <li><a className='prettyLink'>Computer science fanatic</a></li>
-                        <li><a className='prettyLink'>Linux lover</a></li>
+                        <li><a className='prettyLink'>Computer science student</a></li>
+                        <li><a className='prettyLink'>English-portuguese interpreter</a></li>
+                        <li><a className='prettyLink'>Law student too!</a></li>
                     </ul>
                     <p> I love writing the cleanest and most efficient code, check this on my <a className='prettyLink' href="https://github.com/pchagas72">github profile</a>. </p>
 
