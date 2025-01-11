@@ -19,10 +19,10 @@ function App() {
             <Projects />
             <div className='insideLinks'>
                 <h1> Still want to know more about me?</h1>
-                <Link className='link_button' to={"/blog"}>My Blog</Link>
-                <Link className='link_button' to={"/bookshelf"}>My Bookshelf</Link>
-                <Link className='link_button' to={"/repertoir"}>My Repertoire</Link>
-                <Link className='link_button' to={"/notebook"}>My Notebook (new)</Link>
+                <Link className='link_button' to={"/blog"}>Blog</Link>
+                <Link className='link_button' to={"/bookshelf"}>Bookshelf</Link>
+                <Link className='link_button' to={"/repertoir"}>Repertoire</Link>
+                <Link className='link_button' to={"/notebook"}>Notebook </Link>
             </div>
             <CM content={footerMd} />
         </div>
