@@ -5,6 +5,8 @@ import Blog from './routes/Blog'
 import Bookshelf from './routes/Bookshelf'
 import Repertoir from './routes/Repertoir'
 import Notebook from './routes/Notebook'
+import Background from './routes/AboutMe'
+import Resume from './routes/Resume'
 
 
 function App() {
@@ -36,6 +38,8 @@ function App() {
             <Route path="/bookshelf" element={<Bookshelf/>}/>
             <Route path="/repertoir" element={<Repertoir/>}/>
             <Route path="/notebook" element={<Notebook/>}/>
+            <Route path="/background" element={<Background/>}/>
+            <Route path="/resume" element={<Resume/>}/>
         </Routes>
   )
 }

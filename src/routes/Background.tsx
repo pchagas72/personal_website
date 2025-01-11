@@ -1,8 +1,9 @@
 import './css/Resume.css'
 import team_pic from '../assets/team.png'
 import team_now_pic from '../assets/team_now.png'
+import { useEffect } from 'react'
 
-function Resume(){
+function Background(){
 
     useEffect(() => {
         // Scroll to the top when the component mounts
@@ -164,4 +165,4 @@ function Resume(){
     )
 }
 
-export default Resume
+export default Background
