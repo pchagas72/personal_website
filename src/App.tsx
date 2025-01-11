@@ -5,7 +5,7 @@ import Blog from './routes/Blog'
 import Bookshelf from './routes/Bookshelf'
 import Repertoir from './routes/Repertoir'
 import Notebook from './routes/Notebook'
-import Background from './routes/AboutMe'
+import Background from './routes/Background'
 import Resume from './routes/Resume'
 
 
