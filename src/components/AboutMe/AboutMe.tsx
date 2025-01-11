@@ -1,7 +1,7 @@
 import './AboutMe.css'
 import picture from '../../assets/eu.jpeg'
 import SectionTitle from '../SectionTitle/SectionTitle'
-import { FaDiscord, FaInstagram, FaLinkedin, FaMailBulk, FaAddressCard } from 'react-icons/fa'
+import { FaDiscord, FaInstagram, FaLinkedin, FaAddressCard } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 function AboutMe(){
@@ -29,9 +29,12 @@ function AboutMe(){
 
                     <p> On top of all that, I'm a proud <a href='https://pedrochagas.com/repertoir' className='prettyLink'>musician</a> at the Pernambuco Music Conservatoire </p>
 
+                    <p> Reach me at <a className="prettyLink">pedrochagas.sh@gmail.com</a></p>
+
+                    <p> Or check my contact below: </p>
+
                     <h3> My contact: </h3>
                     <ul className='socials'>
-                        <li><FaMailBulk className='icon'/> <a className='prettyLink'>pedrochagas.sh@gmail.com</a></li>
                         <li><FaDiscord className='icon'/> <a className='prettyLink'>Pchagas</a></li>
                         <li><FaInstagram className='icon'/><a className='prettyLink'>@pchagas.s</a></li>
                         <li><FaLinkedin className='icon'/> <a href='https://www.linkedin.com/in/pedro-chagas-44a4112aa' className='prettyLink'>Pedro Chagas</a></li>
