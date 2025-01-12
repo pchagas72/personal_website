@@ -31,7 +31,6 @@ function Blog(){
                     <h2 className='name'> {piece[0]} </h2>
                     <h3 className='author'> <i>{piece[1]}</i> </h3>
                     <p className='description'>{piece[2]}</p>
-                    <p className='pdf'><a href={piece[3]}> <b>Download sheet music</b> </a></p>
                 </section>
             )}
         </>

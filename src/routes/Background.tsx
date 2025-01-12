@@ -1,4 +1,4 @@
-import './css/Resume.css'
+import './css/Background.css'
 import team_pic from '../assets/team.png'
 import team_now_pic from '../assets/team_now.png'
 import { useEffect } from 'react'
@@ -14,7 +14,7 @@ function Background(){
         <>
             <h1>Past experiences until now</h1>
 
-            <div className='resume_entry'>
+            <div className='background_entry'>
                 <h2 className='resume_title'>Military School, where I first begin to pursue my dreams</h2>
 
                 <section>
@@ -96,7 +96,7 @@ function Background(){
                 </section>
             </div>
 
-            <div className='resume_entry'>
+            <div className='background_entry'>
                 <h2 className='resume_title'>First semester of college</h2>
 
                 <section>
@@ -137,7 +137,7 @@ function Background(){
                 </section>
             </div>
 
-            <div className='resume_entry'>
+            <div className='background_entry'>
                 <h2 className='resume_title'>UFPE - Engineering College (Now!)</h2>
 
                 <section>
