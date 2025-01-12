@@ -57,6 +57,9 @@ h1{
         color: rgb(215, 174, 204);
         font-style: italic;
     }
+    ul li{
+        padding-bottom: 10px; 
+    }
 
 }
 @media (max-width: 650px) {
@@ -75,4 +78,3 @@ h1{
         font-size: 2px;
     }
 }
-

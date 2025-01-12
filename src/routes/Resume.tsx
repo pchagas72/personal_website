@@ -20,7 +20,9 @@ function Resume(){
                     </p>
                     <p>
                         I'm a strong team worker, with a gift for leadership and always working for the best of my team and project.
+                        I'm also a natural born innovator! I'll always search for the best new ways to develop, interact and produce.
                     </p>
+                    <p> I want to <a className="prettyLink">make real difference</a> on <a className="prettyLink"> on real people.</a></p>
                 </section>
             </div>
 
@@ -35,6 +37,7 @@ function Resume(){
                         <li> Learning on-demand </li>
                         <li> Public speaker with assertive dialogue courses </li>
                         <li> Passionate teacher </li>
+                        <li> Delegate on MUN simulations </li>
 
                     </ul>
                     <h2 className="section_title">Programming languages</h2>
@@ -58,7 +61,10 @@ function Resume(){
                 <h2 className="resume_title">Experience</h2>
                 <section>
                     <div>
-                        <h2 className="section_title">Robotics Teacher - Military School of Recife</h2>
+                        <h2 className="section_title">Robotics Teacher - Military School of Recife / nonproft organizations</h2>
+                        <p>
+                            I'm a robotics coach and teacher for the Military School of Recife. I thrive for the success of my team.
+                        </p>
                         <p>
                             I'm a robotics coach and teacher for the Military School of Recife. I thrive for the success of my team.
                         </p>
@@ -86,6 +92,9 @@ function Resume(){
                         <p>
                             I give guitar lessons both in english and portuguese for guitar starters.
                         </p>
+                        <p>
+                            And starting in 2024, I gave guitar lessons for free to young people in my neighborhood, aiming to increase the transforming power of music. Now I'm looking for a church or nonprofit organization to start a new project.
+                        </p>
                     </div>
                 </section>
             <section>
@@ -93,6 +102,14 @@ function Resume(){
                         <h2 className="section_title">Young Entrepeneur</h2>
                         <p>
                             I have a sidekick business in which me and a group of friends develop websites and help college students with programming subjects and projects.
+                        </p>
+                    </div>
+                </section>
+            <section>
+                    <div>
+                        <h2 className="section_title">Delegate in MUN simulation / PEMUN/CRIJN</h2>
+                        <p>
+                            I take part in MUN simulations as speach advisor, and tech lead.
                         </p>
                     </div>
                 </section>
@@ -117,6 +134,19 @@ function Resume(){
                         <li>3rd place - IBM Quantum Challenge (2023)</li>
                         <li>1st place - Globo Hackathon Challenge, Rec'n Play (2024)</li>
                         <li>Total of three gold medals in national robotics competitions as student and as teacher</li>
+                        <li>Best innovator prize at the national robotics olympiad</li>
+                        <li>Best programmer and robotics club president of the miltary school system of Brazil</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div className="resume_entry">
+                <h2 className="resume_title">What am I currently doing:</h2>
+                <section>
+                    <ul>
+                        <li> Studying for CCNA and Amazon certifications. </li>
+                        <li> Searching for my first internship. </li>
+                        <li> Looking for a nonproft organization or church to give guitar or robotics lessons. </li>
                     </ul>
                 </section>
             </div>
