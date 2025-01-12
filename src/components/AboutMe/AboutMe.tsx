@@ -13,10 +13,9 @@ function AboutMe(){
 
                 <p> Hi, my name is Pedro Chagas and I am: </p>
                     <ul className='iam'>
-                        <li><a className='prettyLink'>Your dream developer</a></li>
+                        <li><a className='prettyLink'>Fullstack developer</a></li>
                         <li><a className='prettyLink'>Classical Musician</a></li>
                         <li><a className='prettyLink'>Engineering student</a></li>
-                        <li><a className='prettyLink'>Fullstack developer</a></li>
                     </ul>
                     <p> I love writing code, check this on my <a className='prettyLink' href="https://github.com/pchagas72">github profile</a>. </p>
 
