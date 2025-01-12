@@ -136,6 +136,8 @@ function Resume(){
                         <li>Total of three gold medals in national robotics competitions as student and as teacher</li>
                         <li>Best innovator prize at the national robotics olympiad</li>
                         <li>Best programmer and robotics club president of the miltary school system of Brazil</li>
+                        <li>First place at FEBRACE 2021</li>
+                        <li>Second place at MOSTRATEC 2022</li>
                     </ul>
                 </section>
             </div>
