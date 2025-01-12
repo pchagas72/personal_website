@@ -45,8 +45,8 @@ function Resume(){
                         <li> Linux distro maintainer, and linux server admin </li>
                         <li> Game and physiscs engines programming </li>
                     </ul>
+                    <h2 class="section_title">Frameworks</h2>
                     <ul>
-                        <h2 class="section_title">Frameworks</h2>
                         <li>Web development with React and Django </li>
                         <li>Internal servers with ngrok and linux internal networks</li>
                     </ul>

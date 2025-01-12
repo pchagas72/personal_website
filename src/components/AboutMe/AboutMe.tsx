@@ -41,8 +41,8 @@ function AboutMe(){
                     <h2> Interested in hiring me? </h2>
                     <ul className='socials'>
 
-                    <li className='resume'><FaAddressCard className='icon'/> <Link className='prettyLink' to={"/background"}>Background</Link></li>
-                    <li className='resume'><FaAddressCard className='icon'/> <Link className='prettyLink' to={"/resume"}>My Resume</Link></li>
+                    <li className='resume'><FaAddressCard className='icon'/> <Link className='prettyLink' to={"/background"}>Life Story</Link></li>
+                    <li className='resume'><FaAddressCard className='icon'/> <Link className='prettyLink' to={"/resume"}>Resume</Link></li>
                     </ul>
                 </div>
                 <div className='aboutMePicture'>
