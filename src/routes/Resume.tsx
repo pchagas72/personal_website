@@ -30,6 +30,7 @@ function Resume(){
                     <h2 className="section_title">Soft skills</h2>
                     <ul>
                         <li> Great team worker </li>
+                        <li> Agile student, scrum master </li>
                         <li> Leader with passion for diffcult projects </li>
                         <li> Learning on-demand </li>
                         <li> Public speaker with assertive dialogue courses </li>
