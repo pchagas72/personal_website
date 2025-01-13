@@ -61,7 +61,7 @@ function Resume(){
                 <h2 className="resume_title">Experience</h2>
                 <section>
                     <div>
-                        <h2 className="section_title">Robotics Teacher - Military School of Recife / nonproft organizations</h2>
+                        <h2 className="section_title">Robotics Teacher - Military School of Recife / nonprofit organizations</h2>
                         <p>
                             I'm a robotics coach and teacher for the Military School of Recife. I thrive for the success of my team.
                         </p>
@@ -148,7 +148,7 @@ function Resume(){
                     <ul>
                         <li> Studying for CCNA and Amazon certifications. </li>
                         <li> Searching for my first internship. </li>
-                        <li> Looking for a nonproft organization or church to give guitar or robotics lessons. </li>
+                        <li> Looking for a nonprofit organization or church to give guitar or robotics lessons. </li>
                     </ul>
                 </section>
             </div>
