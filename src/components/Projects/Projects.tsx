@@ -22,10 +22,10 @@ function Projects(){
                     tech="C, C++, Lua, Shell"
                 />
 
-                <ProjectSection projectNumber="3" projectTitle="My project euler solutions"
-                    projectLink="https://github.com/pchagas72/projectEuler"
-                    projectDesc="Minhas soluções para desafios do site Project Euler em diversas linguagens de programação!"
-                    tech="Rust, Go, Javascript, C++, C, python, bash"
+                <ProjectSection projectNumber="3" projectTitle="Constela Colaborativo"
+                    projectLink="https://github.com/pchagas72/Projeto-constela"
+                    projectDesc="This is a news receiving whatsapp bot that also checks for fake news!"
+                    tech="Python, Natural Language Processing, Convolutional Neural networks"
                 />
             </div>
         </>
