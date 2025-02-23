@@ -9,7 +9,7 @@ import (
 )
 
 func StartMenu() int{
-    fmt.Println("(1) - Update posts and books")
+    fmt.Println("(1) - Update all")
     fmt.Println("(2) - Update books")
     fmt.Println("(3) - Update posts")
     fmt.Println("(4) - Add song to repertoir")
