@@ -25,7 +25,7 @@ function Projects(){
                 <ProjectSection projectNumber="3" projectTitle="Constela Colaborativo"
                     projectLink="https://github.com/pchagas72/Projeto-constela"
                     projectDesc="This is a news receiving whatsapp bot that also checks for fake news!"
-                    tech="Python, Natural Language Processing, Convolutional Neural networks"
+                    tech="Python, Natural Language Processing, Convolutional Neural networks, audio and image processing"
                 />
             </div>
         </>
