@@ -9,22 +9,22 @@ function Projects(){
             <div className='ProjectsDiv'>
                 <div className='ProjectsDivText'>
                     <SectionTitle SectionName="Some of my projects" SectionNumber="010"/>
-                    <p>Here are some of my projects, se all of them on <a href='https://github.com/pchagas72' className='prettyLink'>GitHub</a>!</p>
+                    <p>Here are some of my lastest big projects, se all of them on <a href='https://github.com/pchagas72' className='prettyLink'>GitHub</a>!</p>
                 </div>
-                <ProjectSection projectNumber="1" projectTitle="This website!"
-                    projectLink="https://github.com/pchagas72/personal_website"
-                    projectDesc="This website is one of my biggest projects, it's my portifolio and my code sandbox! It's made with react but some twists (It's background is made with Golang!) and it has full support for markdown display."
-                    tech="React, Typescript, CSS, Golang"
+                <ProjectSection projectNumber="1" projectTitle="Cryptography and Ransomware research"
+                    projectLink="https://github.com/pchagas72/ES502"
+                    projectDesc="This is a research program that I started to learn more about viruses and malwares, my end goal is to develop an AI-driven antivirus or high-grade malware."
+                    tech="C, Assembly, Python"
                 />
-                <ProjectSection projectNumber="2" projectTitle="My Dotfiles"
+                <ProjectSection projectNumber="2" projectTitle="My Dotfiles and linux-distro"
                     projectLink="https://github.com/pchagas72/pchagas72-dots"
                     projectDesc="Configuration files for my day-to-day linux enviroment."
-                    tech="C, C++, Lua, Shell"
+                    tech="C, C++, Lua, Bash"
                 />
 
                 <ProjectSection projectNumber="3" projectTitle="Constela Colaborativo"
                     projectLink="https://github.com/pchagas72/Projeto-constela"
-                    projectDesc="This is a news receiving whatsapp bot that also checks for fake news!"
+                    projectDesc="This is a report receiving whatsapp bot that also checks for fake news, fully AI and NLP driven project."
                     tech="Python, Natural Language Processing, Convolutional Neural networks, audio and image processing"
                 />
             </div>

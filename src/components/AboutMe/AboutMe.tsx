@@ -13,24 +13,22 @@ function AboutMe(){
 
                 <p> Hi, my name is Pedro Chagas and I am: </p>
                     <ul className='iam'>
-                        <li><a className='prettyLink'>Fullstack developer</a></li>
+                        <li><a className='prettyLink'>Systems developer</a></li>
                         <li><a className='prettyLink'>Classical Musician</a></li>
                         <li><a className='prettyLink'>Engineering student</a></li>
                     </ul>
-                    <p> I love writing code, check this on my <a className='prettyLink' href="https://github.com/pchagas72">github profile</a>. </p>
+                    <p> I love writing code, check this on my <a className='prettyLink' href="https://github.com/pchagas72">github profile</a>. I'm also a classical musician at the Pernambuco Conservatoire of Music. </p>
 
                 <h2>What am I working on?</h2>
                 <p>I'm one of those people that are always working on something.
-                    So, I'm a <a>Computer engineering</a> student at UFPE, and I'm also majoring in <a>
-                        Internet Systems</a> at UNICAP under the program <a href='https://www.portodigital.org/noticias/embarque-digital-abre-250-vagas-para-turma-2024-2' className='prettyLink'>"Embarque Digital"</a></p>
+                    I'm currently a <a>Electronics engineering</a> student at UFPE, I have research in the fields of AI, embedded systems, compSec and low-level systems programming.</p>
 
-                    <p> I'm taking a break from one of my majors (internet systems), and looking for internships or jobs!</p>
+                    <p> For agents that want to hire me for programming-only jobs, I'm NOT applying to them anymore.</p>
+                    <p> I'm looking for <prettyLink>engineering specific</prettyLink> jobs.</p>
 
-                    <p> On top of all that, I'm a proud <a href='https://pedrochagas.com/repertoir' className='prettyLink'>musician</a> at the Pernambuco Music Conservatoire </p>
+                    <p> For professional contact, reach me at <a className="prettyLink">pedro.pcsilva@ufpe.br</a></p>
 
-                    <p> Reach me at <a className="prettyLink">pedrochagas.sh@gmail.com</a></p>
-
-                    <p> Or check my contact below: </p>
+                    <p> Or check my other contacts below: </p>
 
                     <h3> My contact: </h3>
                     <ul className='socials'>
