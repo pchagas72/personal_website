@@ -158,7 +158,7 @@ function Resume(){
                 <h2 className="resume_title">Contact</h2>
                 <section>
                     <ul>
-                        <li><strong>Email: </strong><a className="prettyLink">pedrochagas.sh@gmail.com</a></li>
+                        <li><strong>Email: </strong><a className="prettyLink">pedro.pcsilva@ufpe.br</a></li>
                         <li><strong>Linkedin: </strong> <a href='https://www.linkedin.com/in/pedro-chagas-44a4112aa' className='prettyLink'>Pedro Chagas</a></li>
                         <li><strong>GitHub: </strong> <a href='https://github.com/pchagas72' className='prettyLink'>pchagas72</a></li>
                     </ul>
