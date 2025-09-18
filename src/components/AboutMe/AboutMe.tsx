@@ -23,9 +23,6 @@ function AboutMe(){
                 <p>I'm one of those people that are always working on something.
                     I'm currently a <a>Electronics engineering</a> student at UFPE, I have research in the fields of AI, embedded systems, compSec and low-level systems programming.</p>
 
-                    <p> For agents that want to hire me for programming-only jobs, I'm NOT applying to them anymore.</p>
-                    <p> I'm looking for <a className='prettyLink'>engineering specific</a> jobs.</p>
-
                     <p> For professional contact, reach me at <a className="prettyLink">pedro.pcsilva@ufpe.br</a></p>
 
                     <p> Or check my other contacts below: </p>
