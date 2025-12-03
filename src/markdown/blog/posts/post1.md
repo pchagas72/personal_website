@@ -1,4 +1,4 @@
-### New looks and new feels
+New looks and new feels
 
 Lately I’ve been going through a major shift in my career — moving from pure 
 programming to the world of automotive engineering and electronics. At first, 
