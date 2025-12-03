@@ -4,4 +4,6 @@ My personal website, this is also a portifolio.
 
 ## TODO
 
-- Edit life experience and resume sections, they're getting old.
+- [ ] Add images to projects
+- [ ] Remove all the unecessary code
+- [ ] Find better format to "further documentation" area
