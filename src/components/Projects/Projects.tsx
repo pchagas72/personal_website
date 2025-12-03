@@ -23,7 +23,7 @@ function Projects(){
                 />
                 <ProjectSection projectNumber="3" projectTitle="Radio Telescope Firmware/Software"
                     projectLink="https://github.com/pchagas72/telescope-server-firmware"
-                    projectDesc="Firmware and software for my radio telescope array!."
+                    projectDesc="Firmware and software for my radio telescope array."
                     tech="C, ESP-IDF"
                 />
                 <ProjectSection projectNumber="4" projectTitle="Cryptography and Ransomware research"
