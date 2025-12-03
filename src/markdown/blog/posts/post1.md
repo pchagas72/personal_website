@@ -1,4 +1,9 @@
-New looks and new feels
+<center>
+
+## New looks and new feels
+### 02/dec/2025
+
+</center>
 
 Lately I’ve been going through a major shift in my career — moving from pure 
 programming to the world of automotive engineering and electronics. At first, 
