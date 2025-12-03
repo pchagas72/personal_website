@@ -1,4 +1,4 @@
-## New looks and new feels
+### New looks and new feels
 
 Lately I’ve been going through a major shift in my career — moving from pure 
 programming to the world of automotive engineering and electronics. At first, 
@@ -19,4 +19,4 @@ And that’s when I realized something important:
 a Baja project isn’t just “a project.” It’s a _way of life_. It changes how you think, 
 how you work, how you grow. It turns engineering into passion, and passion into purpose.
 
-![BAJA SAE NORDESTE 2025]()
+![BAJA SAE NORDESTE 2025](https://github.com/pchagas72/personal_website/blob/main/src/assets/blog/BAJA%20SAE%20NORDESTE%202025.webp?raw=true)
