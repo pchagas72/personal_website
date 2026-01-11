@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import './css/Resume.css'
 import { FaDownload } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
+import resumePDF from '../assets/CV_Pedro_Chagas_Estagio_Engenharia.pdf'
 
 function Resume(){
 
@@ -19,7 +20,7 @@ function Resume(){
                     <h2>Electronic Engineering Student | Automotive Systems</h2>
                 </div>
                 <div className="download_btn_container">
-                    <a className="download_btn" href="/Mercedes/CV_Pedro_Chagas_Estagio_Engenharia.pdf" download target="_blank" rel="noopener noreferrer">
+                    <a className="download_btn" href={resumePDF} download target="_blank" rel="noopener noreferrer">
                         <FaDownload /> Download PDF
                     </a>
                 </div>
