@@ -1,27 +1,34 @@
-.markdownEditor{
-        width: 100%;
-        height: 100%;
-        display: flex;
-    textarea{
-        background: black;
-        border: none;
-        outline: none;
-        width: 40%;
-        height: 99.55%;
-        resize: none;
-        background-color: #16161f;
-        border-right: 2px dotted rgb(205, 214, 244);
-    }
-    
-    .outputSection{
-        width: 60%;
-        height: 98%;
-        padding: 10px;
-        overflow-y: auto;
-    }
+/* src/routes/css/Notebook.css */
+
+.markdownEditor {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row; /* Default to side-by-side */
 }
 
-.noteTakingApp{
+.markdownEditor textarea {
+    background: black;
+    border: none;
+    outline: none;
+    width: 40%;
+    height: 99.55%;
+    resize: none;
+    background-color: #16161f;
+    border-right: 2px dotted rgb(205, 214, 244);
+    font-size: 16px; /* Prevents auto-zoom on iOS */
+    padding: 10px;
+    color: white;
+}
+
+.markdownEditor .outputSection {
+    width: 60%;
+    height: 98%;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.noteTakingApp {
     width: 95%;
     height: 90vh;
     border: 2px rgb(205, 214, 244) solid;
@@ -29,10 +36,11 @@
     right: 0;
     margin: auto;
     margin-bottom: 200px;
-
+    display: flex;
+    flex-direction: column;
 }
 
-.titleText{
+.titleText {
     border: none;
     outline: none;
     width: 30%;
@@ -40,51 +48,89 @@
     border: 2px rgb(205, 214, 244) solid;
     resize: none;
     background-color: #16161f;
+    color: white;
+    padding: 5px;
 }
 
-.sendToFirebaseDiv{
+.sendToFirebaseDiv {
     display: flex;
     flex-direction: column;
     align-content: center;
-    button {
-        margin-top: 20px;
-        background-color: #16161f;
-        border: 1px rgb(205, 214, 244) solid;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        width: 300px;
-    }
-    button:hover{
-        cursor: pointer;
-        border: 1px rgb(215, 174, 204) solid;
-    }
-
+    padding: 10px;
 }
 
-.oldNotes{
+.sendToFirebaseDiv button {
+    margin-top: 20px;
+    background-color: #16161f;
+    border: 1px rgb(205, 214, 244) solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 300px;
+    max-width: 100%; /* Prevents overflow on small screens */
+}
+
+.sendToFirebaseDiv button:hover {
+    cursor: pointer;
+    border: 1px rgb(215, 174, 204) solid;
+}
+
+.oldNotes {
     display: flex;
     flex-direction: column;
-    list-style:decimal;
+    list-style: decimal;
     min-height: 200px;
     width: 60%;
     left: 0;
     right: 0;
     margin: auto;
+    padding-left: 20px; /* Ensure bullets are visible */
 }
 
-.oldNotes li{
+.oldNotes li {
     margin-top: 5px;
 }
 
-.oldNotes li :hover{
-    margin-top: 5px;
-}
-
-.titleH2{
+.titleH2 {
     font-size: 30px;
     text-align: center;
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+    .markdownEditor {
+        flex-direction: column; /* Stack editor and output vertically */
+    }
+
+    .markdownEditor textarea {
+        width: 100%;
+        height: 50%; /* Split height between input and output */
+        border-right: none;
+        border-bottom: 2px dotted rgb(205, 214, 244);
+    }
+
+    .markdownEditor .outputSection {
+        width: 100%;
+        height: 50%;
+    }
+
+    .titleText {
+        width: 100%; /* Full width for title input */
+    }
+
+    .sendToFirebaseDiv button {
+        width: 100%; /* Full width button */
+    }
+
+    .oldNotes {
+        width: 90%; /* Use more space for the list */
+    }
+    
+    .noteTakingApp {
+        height: auto; /* Allow height to grow if needed */
+        min-height: 90vh;
+    }
 }

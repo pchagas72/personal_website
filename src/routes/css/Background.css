@@ -1,15 +1,19 @@
+/* src/routes/css/Background.css */
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pixelify+Sans:wght@400..700&display=swap');
 
-ul{
+/* SCOPED selector - changed from global 'ul' */
+.background_entry ul {
     width: 50%;
+    padding-left: 20px;
 }
 
-h1{
+h1 {
     font-family: "DotGothic16";
     font-size: 45px;
+    text-align: center; /* Center main title on mobile */
 }
 
-.background_entry{
+.background_entry {
     width: 80%;
     height: fit-content;
     padding: 10px;
@@ -18,44 +22,75 @@ h1{
     margin: auto;
     display: flex;
     flex-direction: column;
-    .resume_title{
-        font-size: 35px;
-        font-family: "DotGothic16";
-        width: 100%;
-        border-bottom: 2px solid rgb(205, 214, 244);
-    }
-    h2{
-        font-family: "DotGothic16";
-    }
-    .section_title{
-        font-size: 31px;
-        padding-bottom: 2px;
-        border-bottom: 2px dotted rgb(205, 214, 244);
-        width: fit-content;
-    }
-    section{
-        width: 100%;
-        height: 100%;
-        display: flex;
-    }
     margin-bottom: 50px;
-
-    img {
-        height: 300px; 
-
-    }
-    @media (max-width: 450px) {
-        img {
-            height: 200px;
-        }
-    }
-
-    .resume_title{
-        border-bottom: 2px solid rgb(215, 174, 204);
-        color: rgb(215, 174, 204);
-        font-style: italic;
-    }
-
-
 }
 
+.background_entry .resume_title {
+    font-size: 35px;
+    font-family: "DotGothic16";
+    width: 100%;
+    border-bottom: 2px solid rgb(215, 174, 204);
+    color: rgb(215, 174, 204);
+    font-style: italic;
+    word-wrap: break-word; /* Prevent long titles from overflowing */
+}
+
+.background_entry h2 {
+    font-family: "DotGothic16";
+}
+
+.background_entry .section_title {
+    font-size: 31px;
+    padding-bottom: 2px;
+    border-bottom: 2px dotted rgb(205, 214, 244);
+    width: fit-content;
+    max-width: 100%; /* Ensure title doesn't overflow container */
+}
+
+.background_entry section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+}
+
+.background_entry img {
+    height: 300px;
+    max-width: 100%; /* Ensure images don't overflow */
+    object-fit: contain;
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+    .background_entry {
+        width: 95%; /* Use full width on mobile */
+        padding: 5px;
+    }
+
+    .background_entry section {
+        display: block; /* ensure block layout for text */
+    }
+
+    .background_entry ul {
+        width: 100%; /* Full width list on mobile */
+    }
+
+    h1 {
+        font-size: 32px; /* Smaller main title */
+    }
+    
+    .background_entry .resume_title {
+        font-size: 26px; /* Smaller resume title */
+    }
+
+    .background_entry .section_title {
+        font-size: 24px;
+        white-space: normal; /* Allow text to wrap */
+    }
+
+    .background_entry img {
+        height: auto; /* Responsive height */
+        max-height: 200px;
+        margin: 10px 0;
+    }
+}
