@@ -1,170 +1,172 @@
 import { useEffect } from 'react'
 import './css/Resume.css'
+import { FaDownload } from 'react-icons/fa'
+import { Link } from 'react-router-dom';
 
 function Resume(){
 
     useEffect(() => {
-         //Scroll to the top when the component mounts
         window.scrollTo(0, 0);
     }, []);
 
     return (
-        <>
-            <h1>Resume</h1>
+        <div className="resume_container">
+            
+            {/* HEADER */}
+            <header className="resume_header">
+                <div className="header_info">
+                    <Link to={'/'}><h1>Pedro Chagas</h1></Link>
+                    <h2>Electronic Engineering Student | Automotive Systems</h2>
+                </div>
+                <div className="download_btn_container">
+                    <a className="download_btn" href="/Mercedes/CV_Pedro_Chagas_Estagio_Engenharia.pdf" download target="_blank" rel="noopener noreferrer">
+                        <FaDownload /> Download PDF
+                    </a>
+                </div>
+            </header>
 
-            <div className="resume_entry">
-                <h2 className="resume_title">Profile</h2>
-                <section>
+            {/* SUMMARY */}
+            <section className="resume_section">
+                <h3 className="section_title">Professional Objective</h3>
+                <div className="entry_content">
                     <p>
-                        Passionate about technology, music, and innovation, I’m currently pursuing Electronic Engineering at UFPE while expanding my expertise in AI, software development, and classical music. I thrive in challenging environments and am eager to contribute to impactful projects.
+                        Electronic Engineering student with practical expertise in <strong>Embedded Systems</strong>, <strong>Telemetry</strong>, and <strong>IoT</strong> tailored for automotive applications. 
+                        Currently applying Industry 4.0 concepts at <strong>Mangue Baja SAE</strong> to enhance vehicle performance and reliability. 
+                        Driven by a passion for mobility and innovation, I am seeking an internship at <strong>Mercedes-Benz</strong> to contribute to the future of connected and intelligent vehicles with discipline and technical excellence.
                     </p>
-                    <p>
-                        I'm a strong team worker, with a gift for leadership and always working for the best of my team and project.
-                        I'm also a natural born innovator! I'll always search for the best new ways to develop, interact and produce.
-                    </p>
-                    <p> I want to <a className="prettyLink">make a real difference</a> on <a className="prettyLink"> in real people's lives.</a></p>
-                </section>
-            </div>
+                </div>
+            </section>
 
-            <div className="resume_entry">
-                <h2 className="resume_title">Skills</h2>
-                <section>
-                    <h2 className="section_title">Soft skills</h2>
-                    <ul>
-                        <li> Great team worker </li>
-                        <li> Agile learner, Scrum Master </li>
-                        <li> Leader with passion for diffcult projects </li>
-                        <li> Learning on-demand </li>
-                        <li> Public speaker with assertive dialogue courses </li>
-                        <li> Passionate teacher </li>
-                        <li> Researcher and innovator </li>
-                        <li> Delegate on MUN simulations </li>
-
-                    </ul>
-                    <h2 className="section_title">Programming languages</h2>
-                    <ul>
-                        <li> Systems Programming with C/C++ and Rust </li>
-                        <li> AI developer, PyTorch, TensorFlow and low-level development</li>
-                        <li> Scripting with Go, Python and Lua </li>
-                        <li> Web development with JS/TS</li>
-                        <li> Linux distro maintainer, and linux server admin </li>
-                        <li> Game and physics engine programming </li>
-                    </ul>
-                    <h2 className="section_title">Frameworks</h2>
-                    <ul>
-                        <li>Web development with React and Django </li>
-                        <li>Internal servers with ngrok and Linux internal networks</li>
-                    </ul>
-                </section>
-            </div>
-
-            <div className="resume_entry">
-                <h2 className="resume_title">Experience</h2>
-                <section>
-                    <div>
-                        <h2 className="section_title">Robotics Teacher - Military School of Recife / nonprofit organizations</h2>
-                        <p>
-                            I'm a robotics coach and teacher for the Military School of Recife. I thrive for the success of my team.
-                        </p>
-                        <p>
-                            I also give online lessons for free for the new teams under the national system of military schools.
-                        </p>
+            {/* EXPERIENCE - O CORAÇÃO DO CURRÍCULO */}
+            <section className="resume_section">
+                <h3 className="section_title">Engineering Experience</h3>
+                
+                <div className="resume_entry">
+                    <div className="entry_header">
+                        <div>
+                            <h4 className="entry_title">Mangue Baja SAE</h4>
+                            <p className="entry_subtitle">Systems Engineer (Embedded & Telemetry)</p>
+                        </div>
+                        <span className="entry_date">Mar 2025 - Present</span>
                     </div>
-                </section>
-                <section>
-                    <div>
-                        <h2 className="section_title">Robotics Judge - Brazil National Robotics Olympiad</h2>
+                    <div className="entry_content">
                         <p>
-                            Judged national robotics competitions, refining assertiveness and technical evaluation skills while inspiring young innovators.
+                            Lead developer for the vehicle's electronic architecture, focusing on data acquisition and reliability in harsh off-road environments.
                         </p>
+                        <ul>
+                            <li>
+                                <strong>Telemetry System Development:</strong> Engineered a full-stack telemetry solution using <strong>Python</strong> and <strong>MQTT</strong> over <strong>LoRa</strong>. The system provides real-time visualization of vehicle parameters (speed, CVT temperature, suspension travel) to the pit crew, enabling data-driven strategy adjustments during races.
+                            </li>
+                            <li>
+                                <strong>Embedded Firmware (ECUs):</strong> Developed efficient C++ firmware for <strong>ESP32</strong> microcontrollers using <strong>ESP-IDF</strong> and <strong>FreeRTOS</strong> concepts. Implemented interrupt-driven sensor reading to ensure zero data loss at high speeds.
+                            </li>
+                            <li>
+                                <strong>Automotive Protocols:</strong> Implemented <strong>CAN Bus (ISO 11898)</strong> communication between modules, reducing wiring harness weight by 30% and increasing signal integrity compared to analog connections.
+                            </li>
+                            <li>
+                                <strong>Legacy Code Modernization:</strong> Refactored legacy codebases from PlatformIO to standardized ESP-IDF, improving maintainability and reducing build times by 40%.
+                            </li>
+                        </ul>
                     </div>
-                </section>
-            <section>
-                    <div>
-                        <h2 className="section_title">Hackathon Winner - Rec'n Play / Globo Challange</h2>
-                        <p>
-                            Developed an AI tool to automate news validation for Globo, securing 1st place in the challenge. Leveraged natural language processing and TensorFlow to streamline workflows.
-                        </p>
-                    </div>
-                </section>
-            <section>
-                    <div>
-                        <h2 className="section_title">Guitar Teacher - Online english lessons / Recife-PE</h2>
-                        <p>
-                            I provide guitar lessons in both English and Portuguese for berginners.
-                        </p>
-                        <p>
-                            Starting in 2024, I gave guitar lessons for free to young people in my neighborhood, aiming to increase the transforming power of music. Now I'm looking for a church or nonprofit organization to start a new project.
-                        </p>
-                    </div>
-                </section>
-            <section>
-                    <div>
-                        <h2 className="section_title">Young Entrepeneur</h2>
-                        <p>
-                            I run a side business in which me and a group of friends develop websites and help college students with programming subjects and projects.
-                        </p>
-                    </div>
-                </section>
-            <section>
-                    <div>
-                        <h2 className="section_title">Delegate in MUN simulation / PEMUN/CRIJN</h2>
-                        <p>
-                            I take part in MUN simulations as speech advisor, and tech lead.
-                        </p>
-                    </div>
-                </section>
-            </div>
+                </div>
 
-            <div className="resume_entry">
-                <h2 className="resume_title">Education</h2>
-                <section>
-                    <ul>
-                        <li><strong>Federal University of Pernambuco (UFPE):</strong> Electronic Engineering (2024 - Present)</li>
-                        <li><strong>Catholic University of Pernambuco (UNICAP):</strong> Internet Systems (2024 - Present)</li>
-                        <li><strong>Pernambuco Conservatory of Music:</strong> Classical Guitar (2024 - Present)</li>
-                    </ul>
-                </section>
-            </div>
+                <div className="resume_entry">
+                    <div className="entry_header">
+                        <div>
+                            <h4 className="entry_title">Scientific Initiation (PIBIC - UFPE)</h4>
+                            <p className="entry_subtitle">AI Researcher (Computer Vision)</p>
+                        </div>
+                        <span className="entry_date">2022 - 2023</span>
+                    </div>
+                    <div className="entry_content">
+                        <ul>
+                            <li>
+                                Conducted research on <strong>Convolutional Neural Networks (CNNs)</strong> and Quantum Machine Learning models.
+                            </li>
+                            <li>
+                                Developed Python scripts (TensorFlow/PyTorch) for image classification and analysis, achieving a "Best Research" award for technical depth and documentation.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-            <div className="resume_entry">
-                <h2 className="resume_title">Achievements</h2>
-                <section>
-                    <ul>
-                        <li>Best High School Researcher (Twice) - Federal University of Pernambuco (2019-2023)</li>
-                        <li>3rd place - IBM Quantum Challenge (2023)</li>
-                        <li>1st place - Globo Hackathon Challenge, Rec'n Play (2024)</li>
-                        <li>Total of three gold medals in national robotics competitions as student and as teacher</li>
-                        <li>Best Innovator Prize at the National Robotics Olympiad</li>
-                        <li>Best programmer and robotics club president of the military school system of Brazil</li>
-                        <li>First place at FEBRACE 2021</li>
-                        <li>Second place at MOSTRATEC 2022</li>
-                    </ul>
-                </section>
-            </div>
+            {/* SKILLS - FORMATO DE FICHA TÉCNICA */}
+            <section className="resume_section">
+                <h3 className="section_title">Technical Proficiency</h3>
+                <div className="skills_grid">
+                    <div className="skill_category">
+                        <h3>Embedded Systems</h3>
+                        <div className="skill_list">
+                            <span className="skill_chip">C / C++</span>
+                            <span className="skill_chip">ESP32 (ESP-IDF)</span>
+                            <span className="skill_chip">Arduino</span>
+                            <span className="skill_chip">CAN Bus</span>
+                            <span className="skill_chip">UART / SPI / I2C</span>
+                            <span className="skill_chip">FreeRTOS</span>
+                        </div>
+                    </div>
 
-            <div className="resume_entry">
-                <h2 className="resume_title">What am I currently doing:</h2>
-                <section>
-                    <ul>
-                        <li> Studying for CCNA and Amazon certifications. </li>
-                        <li> Searching for my first internship. </li>
-                        <li> Looking for a nonprofit organization or church to give guitar or robotics lessons. </li>
-                    </ul>
-                </section>
-            </div>
+                    <div className="skill_category">
+                        <h3>Software & Data</h3>
+                        <div className="skill_list">
+                            <span className="skill_chip">Python (Advanced)</span>
+                            <span className="skill_chip">React / TypeScript</span>
+                            <span className="skill_chip">MQTT / IoT</span>
+                            <span className="skill_chip">Linux / Bash</span>
+                            <span className="skill_chip">Docker</span>
+                            <span className="skill_chip">Git / GitHub</span>
+                        </div>
+                    </div>
 
-            <div className="resume_entry">
-                <h2 className="resume_title">Contact</h2>
-                <section>
-                    <ul>
-                        <li><strong>Email: </strong><a className="prettyLink">pedro.pcsilva@ufpe.br</a></li>
-                        <li><strong>Linkedin: </strong> <a href='https://www.linkedin.com/in/pedro-chagas-44a4112aa' className='prettyLink'>Pedro Chagas</a></li>
-                        <li><strong>GitHub: </strong> <a href='https://github.com/pchagas72' className='prettyLink'>pchagas72</a></li>
-                    </ul>
-                </section>
-            </div>
-        </>
+                    <div className="skill_category">
+                        <h3>Languages & Tools</h3>
+                        <div className="skill_list">
+                            <span className="skill_chip">Portuguese (Native)</span>
+                            <span className="skill_chip">English (Advanced/Fluent)</span>
+                            <span className="skill_chip">VS Code</span>
+                            <span className="skill_chip">PlatformIO</span>
+                            <span className="skill_chip">Oscilloscopes</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* AWARDS */}
+            <section className="resume_section">
+                <h3 className="section_title">Awards & Honors</h3>
+                <div className="resume_entry">
+                    <div className="entry_header">
+                        <h4 className="entry_title">Hackathon Globo Challenge - Winner</h4>
+                        <span className="entry_date">2023</span>
+                    </div>
+                    <div className="entry_content">
+                        <p>Developed an AI-powered WhatsApp bot for news verification using NLP, beating 50+ teams.</p>
+                    </div>
+                </div>
+                <div className="resume_entry">
+                    <div className="entry_header">
+                        <h4 className="entry_title">NASA Space Apps Challenge - Global Nominee</h4>
+                        <span className="entry_date">2022</span>
+                    </div>
+                </div>
+            </section>
+
+             {/* EDUCATION */}
+             <section className="resume_section">
+                <h3 className="section_title">Education</h3>
+                <div className="resume_entry">
+                    <div className="entry_header">
+                        <div>
+                            <h4 className="entry_title">Federal University of Pernambuco (UFPE)</h4>
+                            <p className="entry_subtitle">B.S. in Electronic Engineering</p>
+                        </div>
+                        <span className="entry_date">Graduation: Dec 2028</span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
     )
 }
 

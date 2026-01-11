@@ -1,83 +1,247 @@
-*{
-    text-decoration: none;
-    color: rgb(205, 214, 244);
-}
+/* --- HERO SECTION: AUTOMOTIVE SPEC SHEET STYLE --- */
 
-body {
-    padding: 0;
-    margin: 0;
-    color: rgb(205, 214, 244);
-    background-color: #1e1e28;
-
-}
-
-
-.App_div {
+.hero_section {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+    /* Estilo "Placa de Metal Escovado/Carbono" */
+    background: linear-gradient(145deg, rgba(31, 40, 51, 0.6), rgba(11, 12, 16, 0.9));
+    border-left: 4px solid var(--accent-color); /* Acentuação lateral estilo Mercedes AMG */
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    gap: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efeito de brilho metálico passando */
+.hero_section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
     width: 50%;
-    min-width: 500px;
-    right: 0;
-    left: 0;
-    margin: auto;
-    height: fit-content;
-    background: rgba(30, 30, 46, 0.9);
-    margin-top: 25px;
-    margin-bottom: 25px;
-    padding: 25px;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.05), transparent);
+    transform: skewX(-25deg);
+    animation: shine 8s infinite;
 }
 
-.link_button{
-    font-size: 40px;
-    text-decoration: underline;
-    margin-bottom: 45px;
-    color: rgb(215, 174, 204);
+@keyframes shine {
+    0% { left: -100%; }
+    20% { left: 200%; }
+    100% { left: 200%; }
 }
 
-.link_button:hover{
-    font-size: 45px;
+.hero_content {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    z-index: 2;
 }
 
-
-
-@media (max-width: 700px) {
-    .blog_button {
-        font-size: 30px;
-    }
+.hero_image_container {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
 }
 
-.insideLinks{
+.hero_image {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 2px;
+    /* Borda técnica */
+    border: 1px solid rgba(102, 252, 241, 0.3);
+    box-shadow: 0 0 20px rgba(102, 252, 241, 0.1);
+    filter: grayscale(20%) contrast(110%); /* Look mais dramático */
+    transition: filter 0.3s;
+}
+
+.hero_image:hover {
+    filter: grayscale(0%) contrast(100%);
+}
+
+/* Tipografia */
+.highlight_tag {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    font-weight: 700;
+    display: block;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px rgba(102, 252, 241, 0.4);
+}
+
+.hero_content h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3.5rem; /* Maior e mais agressivo */
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+    color: var(--text-highlight);
+    line-height: 0.95;
+    letter-spacing: -1px;
+}
+
+.hero_description {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    line-height: 1.7;
+    margin-bottom: 30px;
+    font-weight: 300;
+    border-left: 1px solid rgba(255,255,255,0.1);
+    padding-left: 20px;
+}
+
+.hero_description strong {
+    color: var(--text-highlight);
+    font-weight: 600;
+}
+
+/* Tech Stack - Estilo "Specs" */
+.tech_stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.tech_stack span {
+    font-family: 'Rajdhani', sans-serif;
+    background: rgba(102, 252, 241, 0.05);
+    padding: 6px 14px;
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    border: 1px solid rgba(102, 252, 241, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* Botões Industriais */
+.primary_btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: var(--accent-color);
+    color: #0b0c10;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 2px; /* Cantos retos */
+    transition: all 0.2s ease;
+    clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%); /* Corte futurista */
+}
+
+.primary_btn:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(102, 252, 241, 0.6);
+}
+
+.secondary_btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: transparent;
+    color: var(--text-highlight);
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid var(--text-primary);
+    border-radius: 2px;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+
+.secondary_btn:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    background: rgba(102, 252, 241, 0.05);
+}
+
+/* --- SEÇÃO INFERIOR (Footer / InsideLinks) --- */
+.insideLinks {
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    width: 100%;
+    
+    /* Centralização Forçada */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
     justify-content: center;
-    width: 100%;
+    text-align: center;
+    padding-bottom: 60px; /* Espaço extra no final */
+}
+
+.insideLinks h1 {
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--text-highlight);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.insideLinks p {
+    margin-bottom: 40px;
+    color: var(--text-primary);
+    max-width: 600px; /* Evita que o texto fique muito largo */
+}
+
+.link_grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%; /* Garante que o container use a largura para centralizar */
 }
 
 .link_button {
-    text-decoration: none;
-    font-size: 40px;
-    margin-top: 10px;
-    background-image: linear-gradient(rgb(205,214,244), rgb(205,214,244));
-    background-size: 0% 0.09rem;
-    background-position-y: 100%;
-    background-position-x: 0%;
-    background-repeat: no-repeat;
-    transition: background-size 0.4s ease-in-out;
-    transition: 400ms;
-}
-.link_button:hover,
-.link_button:focus,
-.link_button:active {
-    background-size: 100% 0.09em;
-    cursor: pointer;
-    background-position-x: 0%;
-    color: rgb(215, 174, 204);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 60px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.03), transparent);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
 }
 
-.insideLinks h1{
-    font-size: 40px;
+.link_button:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    background: rgba(102, 252, 241, 0.05);
+    letter-spacing: 4px; /* Efeito de expansão ao passar o mouse */
+}
+
+@media (max-width: 800px) {
+    .hero_section {
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+    .hero_content h1 {
+        font-size: 2.5rem;
+    }
+    .secondary_btn {
+        margin-left: 0;
+        margin-top: 15px;
+        display: block;
+        text-align: center;
+    }
 }

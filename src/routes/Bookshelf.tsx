@@ -3,6 +3,7 @@ import CS from '../components/ContentMarkdown/ContentMarkdown'
 import books from '../markdown/bookshelf/books.json'
 import { useEffect } from 'react'
 import bookshelfMd from '../markdown/bookshelf/bookshelf.md'
+import Header from '../components/Header/Header'
 
 function Blog(){
 
@@ -13,6 +14,7 @@ function Blog(){
 
     return (
         <>
+            <Header/>
             <CS content={bookshelfMd}/>
             <h1 className='bookshelf_h1'> <i>Books:</i> </h1>
             {

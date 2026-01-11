@@ -1,23 +1,35 @@
 import { useState } from 'react';
 
 function SectionTitle(props: any){
-   const [binNumber, setBinNumber] = useState(props.SectionNumber)
-    function changeBinNumber(number: string){
-        switch(number){
-            case "001": {setBinNumber("1"); break;};
-            case "1": {setBinNumber("001"); break;};
-            case "010": {setBinNumber("2"); break;};
-            case "2": {setBinNumber("010"); break;};
-            case "011": {setBinNumber("3"); break;};
-            case "3": {setBinNumber("011"); break;};
+    // Mapeamento simples para o display inicial (Decimal)
+    const getDecimal = (binary: string) => {
+        switch(binary){
+            case "001": return "01";
+            case "010": return "02";
+            case "011": return "03";
+            case "100": return "04";
+            default: return binary;
         }
     }
 
+    const [isBinary, setIsBinary] = useState(false);
+    
+    // O valor original (props.SectionNumber) é o binário "001", "010" vindo do pai.
+    const displayValue = isBinary ? props.SectionNumber : getDecimal(props.SectionNumber);
+
     return (
-        <>
-            <h2><span className='title_numbering'
-                onClick={() => changeBinNumber(binNumber)}>{binNumber}</span> - {props.SectionName}</h2>
-        </>
+        <h2 style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <span 
+                className='title_numbering'
+                onClick={() => setIsBinary(!isBinary)}
+                title="Click to toggle Binary/Decimal"
+            >
+                {displayValue}
+            </span> 
+            <span style={{color: 'var(--text-highlight)', fontFamily: 'Rajdhani', textTransform: 'uppercase'}}>
+                // {props.SectionName}
+            </span>
+        </h2>
     )
 }
 

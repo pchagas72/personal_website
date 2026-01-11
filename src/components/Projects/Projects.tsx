@@ -8,33 +8,32 @@ function Projects(){
         <>
             <div className='ProjectsDiv'>
                 <div className='ProjectsDivText'>
-                    <SectionTitle SectionName="Some of my projects" SectionNumber="010"/>
-                    <p>Here are some of my lastest big projects, se all of them on <a href='https://github.com/pchagas72' className='prettyLink'>GitHub</a></p>
+                    <SectionTitle SectionName="Key Engineering Projects" SectionNumber="010"/>
+                    <p>Featured work focused on Automotive Systems, IoT, and AI. See full source code on <a href='https://github.com/pchagas72' className='prettyLink'>GitHub</a>.</p>
                 </div>
-                <ProjectSection projectNumber="1" projectTitle="Fullstack Radio and Mqtt Telemetry"
+                
+                <ProjectSection projectNumber="1" projectTitle="Mangue Baja Telemetry System (IoT & Data Analysis)"
                     projectLink="https://github.com/pchagas72/mangue-telemetry"
-                    projectDesc="The telemetry interface I created for the Mangue Baja team."
-                    tech="Typescript, Python, FastAPI"
+                    projectDesc="A professional-grade bespoke telemetry solution inspired by MoTeC/McLaren ATLAS. Features real-time data acquisition via MQTT/LoRa, dynamic React dashboards for track engineers, and SQLite storage for post-run analysis. Enables Data-Driven Decision Making."
+                    tech="Python, MQTT, React, SQLite, LoRa"
                 />
-                <ProjectSection projectNumber="2" projectTitle="Mangue Baja ECUs"
+                
+                <ProjectSection projectNumber="2" projectTitle="Vehicle ECUs Firmware (Connected Car)"
                     projectLink="https://github.com/pchagas72/Mangue-Baja-ECUs"
-                    projectDesc="The firmware I made/edited for the ECUs to a baja-SAE car."
-                    tech="C, C++, ESP-IDF, PlatformIO"
+                    projectDesc="Developed firmware for vehicle Control Units (SCU/MPU) using ESP32. Implemented CAN Bus communication (ISO 11898 standard) and Over-The-Air (OTA) updates, aligning the vehicle with Industry 4.0 standards while ensuring safety-critical reliability in harsh off-road environments."
+                    tech="C++, ESP-IDF, CAN Bus, PlatformIO"
                 />
-                <ProjectSection projectNumber="3" projectTitle="Radio Telescope Firmware/Software"
-                    projectLink="https://github.com/pchagas72/telescope-server-firmware"
-                    projectDesc="Firmware and software for my radio telescope array."
-                    tech="C, ESP-IDF"
-                />
-                <ProjectSection projectNumber="4" projectTitle="Cryptography and Ransomware research"
-                    projectLink="https://github.com/pchagas72/ES502"
-                    projectDesc="This is a research program that I started to learn more about viruses and malwares, my end goal is to develop an AI-driven antivirus or high-grade malware."
-                    tech="C, Assembly, Python"
-                />
-                <ProjectSection projectNumber="5" projectTitle="Constela Colaborativo"
+
+                <ProjectSection projectNumber="3" projectTitle="AI News Validation Bot (Globo Challenge Winner)"
                     projectLink="https://github.com/pchagas72/Projeto-constela"
-                    projectDesc="This is a report receiving whatsapp bot that also checks for fake news, fully AI and NLP driven project."
-                    tech="Python, Natural Language Processing, Convolutional Neural networks, audio and image processing"
+                    projectDesc="Winner of the Hackathon Globo Challenge. An NLP and AI-driven WhatsApp bot that receives, transcribes, and validates news reports using Convolutional Neural Networks, streamlining journalistic workflows."
+                    tech="Python, TensorFlow, NLP, Audio Processing"
+                />
+
+                <ProjectSection projectNumber="4" projectTitle="Radio Telescope Firmware"
+                    projectLink="https://github.com/pchagas72/telescope-server-firmware"
+                    projectDesc="Firmware implementation for a radio telescope array, focusing on precise control and data acquisition from astronomical sensors."
+                    tech="C, ESP-IDF, Hardware Control"
                 />
             </div>
         </>

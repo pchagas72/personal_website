@@ -1,102 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pixelify+Sans:wght@400..700&display=swap');
+/* Removemos o import de fontes antigas (DotGothic, etc) pois já estão no App.css */
 
-.aboutMeSection{
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 90%;
-    height: fit-content;
+.aboutMeSection {
+    width: 100%;
+    max-width: 1200px;
+    margin: 80px auto;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    border-top: 2px solid rgb(205, 214, 244);
+    justify-content: space-between;
+    /* Linha divisória sutil e técnica */
+    border-top: 1px solid rgba(255, 255, 255, 0.1); 
+    padding-top: 60px;
+    gap: 40px;
 }
 
-.aboutMeSectionText{
-    padding: 40px;
-    width: 50%;
+.aboutMeSectionText {
+    width: 55%;
+    padding-right: 20px;
 }
 
-.aboutMePicture img{
-    height: 300px; 
-    border-right: 5px outset rgb(205, 214, 244);
-    border-bottom: 5px outset rgb(205, 214, 244);
-    padding-right: 5px;
-    padding-bottom: 5px;
-    transition: 300ms;
+.aboutMeSectionText p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    text-align: justify;
 }
 
-.aboutMePicture img:hover{
-    border-right: 5px outset rgb(215, 174, 204);
-    border-bottom: 5px outset rgb(215, 174, 204);
-    padding-right: 10px;
-    padding-bottom: 10px;
-    transition: 300ms;
-    cursor: pointer;
+.aboutMeSectionText strong {
+    color: var(--text-highlight);
+    font-weight: 600;
 }
-@media (min-width: 992px) {
+
+.aboutMeSectionText h3 {
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--text-highlight);
+    text-transform: uppercase;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+
+/* --- FOTO DE PERFIL --- */
+.aboutMePicture {
+    position: relative;
+    z-index: 1;
+}
+
+.aboutMePicture img {
+    height: 350px;
+    width: auto;
+    object-fit: cover;
+    /* Moldura "Metálica" */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 4px solid var(--text-primary);
+    border-bottom: 4px solid var(--text-primary);
+    padding: 10px; /* Espaço entre foto e borda */
+    background: rgba(255, 255, 255, 0.02);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    filter: grayscale(10%);
+}
+
+.aboutMePicture img:hover {
+    /* Efeito "Active State" */
+    border-color: var(--accent-color);
+    transform: translateY(-5px) translateX(-5px);
+    box-shadow: 10px 10px 0px rgba(102, 252, 241, 0.1);
+    filter: grayscale(0%);
+}
+
+/* --- ÍCONES SOCIAIS (CORRIGIDO) --- */
+.socials {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.socials li {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    transition: transform 0.2s ease;
+}
+
+.socials li:hover {
+    transform: translateX(10px); /* Move para a direita ao passar o mouse */
+}
+
+/* Alvo correto para o ícone */
+.socials .icon {
+    font-size: 1.5rem; /* Tamanho visível */
+    color: var(--text-primary); /* Prata */
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.socials li:hover .icon {
+    color: var(--accent-color); /* Teal brilhante no hover */
+    filter: drop-shadow(0 0 5px var(--accent-color));
+}
+
+/* Estilo dos links de texto */
+.socials a {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.socials li:hover a {
+    color: var(--text-highlight);
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 900px) {
     .aboutMeSection {
-        font-size: 17px;
+        flex-direction: column-reverse; /* Texto em cima, foto embaixo em mobile? Ou o inverso */
+        text-align: center;
+        width: 100%;
+        padding: 40px 20px;
     }
-}
 
-@media (max-width: 780px) {
-    .aboutMeSection {
-        font-size: 16px;
-    }
-    
-    .aboutMeSectionText{
+    .aboutMeSectionText {
+        width: 100%;
         padding: 0;
     }
 
-    .aboutMeSection {
-        width: 90%;
+    .aboutMeSectionText p {
+        text-align: left; /* Mantém legibilidade */
     }
-    .aboutMeSection{
-        flex-direction: column;
-    }
-    .aboutMePicture{
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    .aboutMeSectionText{
-        width: inherit;
-    }
-}
 
-@media (max-width: 450px) {
-    .aboutMePicture img{
-        height: 200px;
+    .socials li {
+        justify-content: center; /* Centraliza ícones no mobile */
     }
-}
+    
+    .socials li:hover {
+        transform: scale(1.05); /* Zoom em vez de mover lado */
+    }
 
-.socials{
-    li{
-        display: flex;
-        align-items: center;
-        margin-top: 10px;
+    .aboutMePicture img {
+        height: 250px;
+        margin-bottom: 40px;
     }
-    li:hover{
-        .icon{
-        font-size: 22.5px;
-        cursor: pointer;
-        transition: 200ms;
-        }
-    }
-    .icon{
-        font-size: 20px;
-        padding-right: 20px;
-        transition: 200ms;
-        color: rgb(205, 214, 244);
-    }
-    .icon:hover{
-        font-size: 22.5px;
-        cursor: pointer;
-        transition: 200ms;
-    }
-    list-style: none;
-}
-
-.resume{
-    font-size: 25px;
 }

@@ -3,15 +3,16 @@ import Markdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw';
 import remarkGfm from 'remark-gfm';
 
+interface CMProps {
+    content: string;
+}
 
-function CM(props: any){
+function CM({ content }: CMProps){
     return(
-        <div className="header">
-            <div className="intro_text">
-                <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
-                    {props.content}
-                </Markdown>
-            </div>
+        <div className="markdown_container">
+            <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
+                {content}
+            </Markdown>
         </div>
     )
 }

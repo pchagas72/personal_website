@@ -1,106 +1,75 @@
-h1{
-    text-align: center;
-    font-size: 60px;
-    padding:15px;
-}
-
-.Header_div{
+.Header_div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 75%;
-    right: 0;
-    left: 0;
-    margin: auto;
-    height: fit-content;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-bottom: 25px;
-}
-
-.Header_div img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 300px;
-    padding-bottom: 20px;
-    cursor: pointer;
-    transform: scale(1);
-    transition: all 300ms;
-}
-
-.Header_div img:hover{
-    cursor: pointer;
-    transform: scale(1.07);
-    transition: all 500ms;
-}
-
-.mandelbrot_text{
-    font-size: 18px;
-        transition: ease-in-out 200ms;
-}
-
-.mandelbrot_text:hover{
-    font-size: 18px;
+    width: 100%;
+    margin-bottom: 40px;
+    padding-top: 20px;
 }
 
 .h1_header {
-    color: rgb(205, 214, 244);
-    text-decoration: none;
-    background-image: linear-gradient(rgb(205,214,244), rgb(205,214,244));
-    background-size: 0% 0.09rem;
-    background-position-y: 100%;
-    background-position-x: 100%;
-    background-repeat: no-repeat;
-    transition: background-size 0.4s ease-in-out;
-}
-.h1_header:hover,
-.h1_header:focus,
-.h1_header:active {
-    background-size: 100% 0.09em;
-    background-position-x: 0%;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 8px; /* Espaçamento premium */
+    font-size: 5rem;
+    margin: 0;
+    padding: 10px;
+    color: var(--text-highlight);
+    text-align: center;
+    /* Efeito Metálico no Texto */
+    background: linear-gradient(to bottom, #ffffff, #999999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: letter-spacing 0.5s ease;
 }
 
+.h1_header:hover {
+    letter-spacing: 12px; /* Expande como se estivesse acelerando */
+    cursor: pointer;
+}
+
+/* Imagens do Header (Mandelbrot) */
+/* Mantemos a lógica, mas deixamos visualmente mais técnico, como um holograma */
+.Header_div img {
+    display: block;
+    height: 200px;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    filter: drop-shadow(0 0 10px rgba(102, 252, 241, 0.3)); /* Glow Tech */
+    border-radius: 50%; /* Se quiser redondo, ou remova para quadrado */
+    opacity: 0.9;
+}
+
+.Header_div img:hover {
+    transform: scale(1.1) rotate(5deg);
+    filter: drop-shadow(0 0 20px rgba(102, 252, 241, 0.8));
+    opacity: 1;
+}
 
 .mandelbrot_text {
-    cursor: pointer;
-    color: rgb(205, 214, 244);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    opacity: 0.7;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.mandelbrot_text a {
+    color: var(--accent-color);
     text-decoration: none;
-    background-image: linear-gradient(rgb(205,214,244), rgb(205,214,244));
-    background-size: 0% 0.09rem;
-    background-position-y: 100%;
-    background-position-x: 50%;
-    background-repeat: no-repeat;
-    transition: background-size 0.2s ease-in-out;
+    border-bottom: 1px dotted var(--accent-color);
 }
-.mandelbrot_text:hover,
-.mandelbrot_text:focus,
-.mandelbrot_text:active {
-    background-size: 100% 0.09em;
-}
-
-
 
 @media (max-width: 700px) {
-    h1{
-        font-size: 40px;
+    .h1_header {
+        font-size: 3rem;
+        letter-spacing: 4px;
     }
-    .Header_div {
-        font-size: 14px;
-    }
-    .Header_div img{
-        height: 150px;
+    .Header_div img {
+        height: 120px;
     }
 }
-
-
-@media (min-width: 1000px) {
-    h1{
-        font-size: 75px;
-    }
-    .Header_div img{
-        height: 300px;
-    }
-}
-

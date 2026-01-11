@@ -1,41 +1,126 @@
-.header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 50px;
+/* --- ESTILOS DO LEITOR DE MARKDOWN --- */
+
+.markdown_container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px 100px 20px;
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    animation: appear 0.5s ease-out;
 }
-.intro_text{
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-    border-bottom: 2px solid rgb(205, 214, 244);
-    border-top: 2px solid rgb(205, 214, 244);
+
+/* Títulos dentro do post */
+.markdown_container h1, 
+.markdown_container h2, 
+.markdown_container h3, 
+.markdown_container h4 {
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--text-highlight);
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.markdown_container h1 {
+    font-size: 2.5rem;
+    border-bottom: 2px solid var(--accent-dim);
+    padding-bottom: 10px;
+}
+
+.markdown_container h2 {
+    font-size: 1.8rem;
+    border-left: 4px solid var(--accent-color);
+    padding-left: 15px;
+}
+
+.markdown_container h3 {
+    font-size: 1.4rem;
+    color: var(--accent-color);
+}
+
+/* Parágrafos e Listas */
+.markdown_container p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.markdown_container ul, .markdown_container ol {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.markdown_container li {
+    margin-bottom: 10px;
+}
+
+.markdown_container strong {
+    color: var(--text-highlight);
+    font-weight: 600;
+}
+
+/* Citações */
+.markdown_container blockquote {
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 4px solid var(--accent-dim);
+    margin: 30px 0;
     padding: 20px;
-    padding-top: 0px;
+    font-style: italic;
+    color: var(--text-primary);
 }
 
-@media (min-width: 992px) {
-    .intro_text {
-        font-size: 20px;
-    }
+/* Links no texto */
+.markdown_container a {
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+    transition: all 0.2s;
 }
 
-@media (max-width: 780px) {
-    .header {
-        font-size: 16px;
-    }
-
-    .intro_text {
-        width: 90%;
-    }
+.markdown_container a:hover {
+    color: var(--text-highlight);
+    text-decoration-color: var(--text-highlight);
 }
 
-@media (max-width: 450px) {
-    .intro_text img{
-        width: 150px;
-    }
+/* Blocos de Código */
+.markdown_container pre {
+    background: #000 !important; /* Fundo preto total para contraste */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    padding: 20px;
+    overflow-x: auto;
+    margin: 30px 0;
 }
 
+.markdown_container code {
+    font-family: 'Fira Code', 'Courier New', monospace; /* Fonte monoespaçada */
+    font-size: 0.9em;
+}
 
+/* Imagens */
+.markdown_container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 30px 0;
+    display: block;
+}
+
+/* Botão voltar dentro do post */
+.back_btn {
+    display: inline-block;
+    margin-bottom: 30px;
+    color: var(--accent-dim);
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.back_btn:hover {
+    color: var(--accent-color);
+    text-decoration: none;
+}

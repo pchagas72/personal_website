@@ -1,114 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+/* Importando fontes técnicas e limpas */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Rajdhani:wght@500;600;700&display=swap');
 
 @keyframes appear {
-    from {
-        opacity: 0;
-        scale: 0.5;
-    }
-    to {
-        opacity: 1;
-        scale: 1;
-    }
+    from { opacity: 0; scale: 0.95; }
+    to { opacity: 1; scale: 1; }
 }
 
 :root {
+    /* Cores "Automotive High-Performance" */
+    --bg-color: #0b0c10;       /* Preto Profundo */
+    --panel-bg: #111418;       /* Cinza Carvão Mais Escuro */
+    --card-bg: #1a1d24;        /* Fundo dos Cards */
+    --text-primary: #c5c6c7;   /* Prata Claro */
+    --text-highlight: #ffffff; /* Branco Puro */
+    --accent-color: #66fcf1;   /* Electric Teal (Tech/Petronas) */
+    --accent-dim: #45a29e;     /* Teal Escuro */
+    
     --cursorX: 50vw;
     --cursorY: 50vh;
 }
 
-body:before{
+/* Fundo base do corpo - Garante que não haja flashes brancos */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--bg-color); /* Fundo sólido de segurança */
+    overflow-x: hidden;
+}
+
+body:before {
     content: '';
     display: block;
     width: 100%;
     height: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
     pointer-events: none;
-    background: radial-gradient(
-        circle 30vmax at var(--cursorX) var(--cursorY),
-        rgba(46,46,64,0) 0%,
-        rgba(205, 214, 244, 0.012) 30%,
-        rgba(0,0,0,.10) 100%
-        )
+    /* Blueprint Grid - Engenharia */
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    z-index: -1;
 }
 
-*{
+* {
     text-decoration: none;
-    color: rgb(205, 214, 244);
-    font-family: 'Josefin', sans-serif;
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-style: normal;
+    box-sizing: border-box;
 }
 
+/* Links estilizados */
 .prettyLink {
-    color: rgb(215, 174, 204);
-    text-decoration: none;
-    background-image: linear-gradient(rgb(205,214,244), rgb(205,214,244));
-    background-size: 0% 0.09rem;
-    background-position-y: 100%;
-    background-position-x: 100%;
-    background-repeat: no-repeat;
-    transition: background-size 0.4s ease-in-out;
-}
-.prettyLink:hover,
-.prettyLink:focus,
-.prettyLink:active {
-    background-size: 100% 0.09em;
-    cursor: pointer;
-    background-position-x: 0%;
+    color: var(--accent-color);
+    font-weight: 600;
+    position: relative;
+    transition: all 0.3s ease;
 }
 
-.title_numbering{
-    color: rgb(215, 174, 204);
-    font-family: 'DotGothic16';
-    font-weight: 300;
-    font-size: 20px;
+.prettyLink:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.prettyLink:hover:after {
+    width: 100%;
 }
 
 .title_numbering {
-    color: rgb(215, 174, 204);
-    text-decoration: none;
-    transition: 300ms;
-}
-.title_numbering:hover {
+    color: var(--accent-dim);
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
     cursor: pointer;
-    font-size: 22px;
-    transition: 300ms;
+    user-select: none;
 }
 
-
-body {
-    padding: 0;
-    margin: 0;
-    color: rgb(205, 214, 244);
-    background-color: #1e1e28;
-}
-
+/* O estilo de caixa flutuante foi removido. Mantemos a classe apenas para segurança, mas transparente */
 .App_div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    width: 50%;
-    min-width: 500px;
-    right: 0;
-    left: 0;
-    margin: auto;
-    height: fit-content;
-    background: rgba(30, 30, 46, 0.9);
-    margin-top: 25px;
-    margin-bottom: 25px;
-    padding: 25px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
 }
 
-.blog_button{
-    font-size: 50px;
-    text-decoration: underline;
+/* Scrollbar Integrada */
+::-webkit-scrollbar {
+    width: 8px;
 }
-
-@media (max-width: 680px){
-    .App_div{
-        padding: 0px;
-    }
+::-webkit-scrollbar-track {
+    background: transparent; /* Transparente para ver a grade no fundo */
+}
+::-webkit-scrollbar-thumb {
+    background: #2c3e50;
+    border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.1);
 }

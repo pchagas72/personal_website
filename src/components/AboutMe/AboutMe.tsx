@@ -1,7 +1,7 @@
 import './AboutMe.css'
 import picture from '../../assets/eu.jpeg'
 import SectionTitle from '../SectionTitle/SectionTitle'
-import { FaDiscord, FaInstagram, FaLinkedin, FaAddressCard } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 
 function AboutMe(){
     return (
@@ -10,28 +10,27 @@ function AboutMe(){
                 <div className='aboutMeSectionText'>
                 <SectionTitle SectionName="About Me" SectionNumber="001"/>
 
-                <p> Hi, my name is Pedro and this is my little place on the internet.</p>
+                <p> 
+                    I am an Electronics Engineering student at UFPE (Federal University of Pernambuco) driven by the challenge of moving the world forward through technology.
+                </p>
 
-                <p> I'm a brazilian electronics engineering major at UFPE with a strong programmer background.</p>
+                <p> 
+                    Currently, I serve as a Systems Engineer at <strong>Mangue Baja SAE</strong>, where I apply <strong>Industry 4.0</strong> concepts to motorsport. My work bridges the gap between hardware and software, developing robust embedded systems and real-time telemetry solutions that empower the team to make data-driven decisions.
+                </p>
 
-                <p> As of now, my focus is redirected to being a member of the Mangue Baja team. </p>
+                <p> 
+                    I am seeking an opportunity at <strong>Mercedes-Benz</strong> to apply my passion for automotive engineering, discipline in problem-solving, and continuous drive for innovation.
+                </p>
 
-                <h2>What am I working on?</h2>
-
-                <p>I'm always working on some projects, varying from AI to bare-metal embedded programming. 
-                    More about that on my <a href='https://github.com/pchagas72' className='prettyLink'>GitHub</a> or in the 
-                projects section.</p>
-
-                <h3> Reach me at: </h3>
+                <h3> Connect with me: </h3>
                     <ul className='socials'>
-                        <li><FaDiscord className='icon'/> <a className='prettyLink'>Pchagas</a></li>
-                        <li><FaInstagram className='icon'/><a className='prettyLink'>@pchagas.s</a></li>
+                        <li><FaGithub className='icon'/> <a href='https://github.com/pchagas72' className='prettyLink'>pchagas72</a></li>
                         <li><FaLinkedin className='icon'/> <a href='https://www.linkedin.com/in/pedro-chagas-44a4112aa' className='prettyLink'>Pedro Chagas</a></li>
-                        <li><FaAddressCard className='icon'/> <a className='prettyLink'>pedro.pcsilva@ufpe.br</a></li>
+                        <li><FaEnvelope className='icon'/> <a href='mailto:pedro.pcsilva@ufpe.br' className='prettyLink'>pedro.pcsilva@ufpe.br</a></li>
                     </ul>
                 </div>
                 <div className='aboutMePicture'>
-                    <img src={picture}/>
+                    <img src={picture} alt="Pedro Chagas"/>
                 </div>
             </div>
         </>

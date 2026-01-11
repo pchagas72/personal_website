@@ -11,8 +11,7 @@ import { collection, deleteDoc, doc, onSnapshot, setDoc } from 'firebase/firesto
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { firestore } from '../firebase';
 import { auth } from '../firebase';
-
-
+import Header from '../components/Header/Header'
 
 function Notebook(){
 
@@ -78,6 +77,7 @@ Be aware that this is the first version of this tool!
 
     return (
         <>
+            <Header/>
             <CS content={notebookMd}/>
             <div className='noteTakingApp'> 
                 <div className='markdownEditor'>
