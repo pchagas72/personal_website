@@ -3,10 +3,7 @@ import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 import AboutMe from '../components/AboutMe/AboutMe'
 import Projects from '../components/Projects/Projects'
-
-// Importando a imagem de destaque do Baja
 import bajaTeamPic from '../assets/team_now.png' 
-import Header from '../components/Header/Header'
 
 function Home() { 
 
